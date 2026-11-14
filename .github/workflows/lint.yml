@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - name: ruff (Python harness, chart builder)
-        uses: astral-sh/ruff-action@v4
+        uses: astral-sh/ruff-action@v4.1.0
       - name: shellcheck (pod scripts)
         run: shellcheck scripts/*.sh
       - name: chart builder runs on the committed results
