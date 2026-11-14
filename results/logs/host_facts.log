@@ -1,0 +1,9 @@
+fio seq1m: 9101 MiB/s, 9101 IOPS
+fio rand4k: 383 MiB/s, 97938 IOPS
+name, driver_version, memory.total [MiB], pcie.link.gen.current, pcie.link.gen.max, pcie.link.width.current, pcie.link.width.max, power.limit [W], clocks.max.sm [MHz], clocks.max.memory [MHz]
+NVIDIA GeForce RTX 3090, 595.91.07, 24576 MiB, 1, 4, 16, 16, 350.00 W, 2100 MHz, 9751 MHz
+               total        used        free      shared  buff/cache   available
+Mem:            1007         143         281           0         588         863
+Swap:              0           0           0
+nproc=256
+HOST_FACTS_DONE

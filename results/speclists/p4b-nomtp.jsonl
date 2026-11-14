@@ -1,0 +1,1 @@
+{"label": "spec-nomtp", "base": "model.json", "set": {}, "remove": ["--mtp"], "phases": [{"mode": "decode", "duration": 45, "warmup": 15, "reps": 3, "max_tokens": 256, "prompt_words": 380, "concurrency": 1}]}

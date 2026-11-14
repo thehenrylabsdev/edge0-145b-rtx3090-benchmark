@@ -1,0 +1,4 @@
+[23:10:24] start smoke
+{"label": "smoke", "phase": 0, "rep": 0, "agg_tps": 38.4, "prompt_tps_median": null, "errors": 0}
+{"label": "smoke", "status": "ok", "load_s": 70.68711829185486, "wall_s": 116.22160816192627}
+SWEEP_DONE p1-smoke

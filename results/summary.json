@@ -1,0 +1,837 @@
+{
+ "b_star_rule": "largest N whose median aggregate TPS is within 2% of the peak median",
+ "b_star_plain": {
+  "b_star": 7,
+  "peak_n": 6,
+  "peak_tps": 54.427728484493045
+ },
+ "b_star_any_variant": {
+  "b_star": 6,
+  "peak_n": 6,
+  "peak_tps": 60.181650238745455,
+  "family_at_peak": "--batch N, MTP head removed, --kv-resident 8192",
+  "label_at_peak": "nomtp-kvres8k-6"
+ },
+ "families": {
+  "plain": {
+   "1": {
+    "label": "batch-1",
+    "tps_median": 46.7909326181408,
+    "tps_min": 46.378414033093094,
+    "tps_max": 46.86595343191673,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 58.72974119867265,
+    "tpot_p50_ms": 17.027148078469672,
+    "ttft_p50_s": 1.1392202377319336,
+    "accept_rate": 0.7111366245694604,
+    "expert_slots": 7360.0,
+    "slots_reported": null,
+    "engine_spec": 4.0,
+    "drafting": "mtp",
+    "log_accept_rate": {
+     "accepted": 3098,
+     "offered": 4356,
+     "rate": 0.7112029384756657
+    }
+   },
+   "2": {
+    "label": "batch-2",
+    "tps_median": 50.18436268052837,
+    "tps_min": 47.899365142513105,
+    "tps_max": 51.20320636509031,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 27.351255609795043,
+    "tpot_p50_ms": 36.59299121183508,
+    "ttft_p50_s": 1.056905746459961,
+    "accept_rate": null,
+    "expert_slots": 6397.0,
+    "slots_reported": 2.0,
+    "engine_spec": 4.0,
+    "drafting": "mtp",
+    "log_accept_rate": {
+     "accepted": 1,
+     "offered": 2,
+     "rate": 0.5
+    }
+   },
+   "3": {
+    "label": "batch-3",
+    "tps_median": 51.941793988795,
+    "tps_min": 51.73222953122274,
+    "tps_max": 53.25513432741598,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 18.701545478109516,
+    "tpot_p50_ms": 52.71401405334473,
+    "ttft_p50_s": 1.1122291088104248,
+    "accept_rate": null,
+    "expert_slots": 5915.0,
+    "slots_reported": 3.0,
+    "engine_spec": 4.0,
+    "drafting": "mtp",
+    "log_accept_rate": {
+     "accepted": 2,
+     "offered": 2,
+     "rate": 1.0
+    }
+   },
+   "4": {
+    "label": "batch-4",
+    "tps_median": 53.53279637155908,
+    "tps_min": 52.81773083692827,
+    "tps_max": 53.566090601203804,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 14.583431239327007,
+    "tpot_p50_ms": 68.57096821654076,
+    "ttft_p50_s": 1.2421810626983643,
+    "accept_rate": null,
+    "expert_slots": 5434.0,
+    "slots_reported": 4.0,
+    "engine_spec": 4.0,
+    "drafting": "mtp",
+    "log_accept_rate": {
+     "accepted": 1,
+     "offered": 1,
+     "rate": 1.0
+    }
+   },
+   "5": {
+    "label": "batch-5",
+    "tps_median": 53.4285962754769,
+    "tps_min": 50.0491276936508,
+    "tps_max": 53.541614894920095,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 11.636945013650797,
+    "tpot_p50_ms": 85.93320659562653,
+    "ttft_p50_s": 2.1647229194641113,
+    "accept_rate": null,
+    "expert_slots": 4951.0,
+    "slots_reported": 5.0,
+    "engine_spec": 4.0,
+    "drafting": "mtp",
+    "log_accept_rate": {
+     "accepted": 1,
+     "offered": 1,
+     "rate": 1.0
+    }
+   },
+   "6": {
+    "label": "batch-6",
+    "tps_median": 54.427728484493045,
+    "tps_min": 51.95420167746315,
+    "tps_max": 55.40775930078412,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 9.300484305440909,
+    "tpot_p50_ms": 107.24686173831715,
+    "ttft_p50_s": 2.1774392127990723,
+    "accept_rate": null,
+    "expert_slots": 4470.0,
+    "slots_reported": 6.0,
+    "engine_spec": 4.0,
+    "drafting": "mtp",
+    "log_accept_rate": {
+     "accepted": 1,
+     "offered": 1,
+     "rate": 1.0
+    }
+   },
+   "7": {
+    "label": "batch-7",
+    "tps_median": 53.348430576630626,
+    "tps_min": 50.700364392744106,
+    "tps_max": 54.57689957195871,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 7.8778661066213065,
+    "tpot_p50_ms": 126.68303695379518,
+    "ttft_p50_s": 2.335839033126831,
+    "accept_rate": 0.6590909090909091,
+    "expert_slots": 3988.0,
+    "slots_reported": 7.0,
+    "engine_spec": 4.0,
+    "drafting": "mtp",
+    "log_accept_rate": {
+     "accepted": 59,
+     "offered": 89,
+     "rate": 0.6629213483146067
+    }
+   },
+   "8": {
+    "label": "batch-8",
+    "tps_median": 48.1428119497015,
+    "tps_min": 46.40631727073958,
+    "tps_max": 49.377168313851385,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 6.3325308438129495,
+    "tpot_p50_ms": 158.3054729536468,
+    "ttft_p50_s": 2.443373203277588,
+    "accept_rate": null,
+    "expert_slots": 3507.0,
+    "slots_reported": 8.0,
+    "engine_spec": 4.0,
+    "drafting": "mtp",
+    "log_accept_rate": {
+     "accepted": 1,
+     "offered": 1,
+     "rate": 1.0
+    }
+   }
+  },
+  "batch_mtp": {
+   "1": {
+    "label": "batch-1",
+    "tps_median": 46.7909326181408,
+    "tps_min": 46.378414033093094,
+    "tps_max": 46.86595343191673,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 58.72974119867265,
+    "tpot_p50_ms": 17.027148078469672,
+    "ttft_p50_s": 1.1392202377319336,
+    "accept_rate": 0.7111366245694604,
+    "expert_slots": 7360.0,
+    "slots_reported": null,
+    "engine_spec": 4.0,
+    "drafting": "mtp",
+    "log_accept_rate": {
+     "accepted": 3098,
+     "offered": 4356,
+     "rate": 0.7112029384756657
+    }
+   },
+   "2": {
+    "label": "batchmtp-2",
+    "tps_median": 51.75989282105044,
+    "tps_min": 50.696380251181075,
+    "tps_max": 52.53221954044609,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 28.565028824158613,
+    "tpot_p50_ms": 35.39046306236118,
+    "ttft_p50_s": 1.0295815467834473,
+    "accept_rate": null,
+    "expert_slots": 6328.0,
+    "slots_reported": 2.0,
+    "engine_spec": 4.0,
+    "drafting": "mtp",
+    "log_accept_rate": {
+     "accepted": 2,
+     "offered": 2,
+     "rate": 1.0
+    }
+   },
+   "3": {
+    "label": "batchmtp-3",
+    "tps_median": 52.34361267044572,
+    "tps_min": 51.79757081562366,
+    "tps_max": 53.64650840698265,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 19.114071840733082,
+    "tpot_p50_ms": 52.2376443825516,
+    "ttft_p50_s": 1.0658204555511475,
+    "accept_rate": 0.7933884297520661,
+    "expert_slots": 5811.0,
+    "slots_reported": 3.0,
+    "engine_spec": 4.0,
+    "drafting": "mtp",
+    "log_accept_rate": {
+     "accepted": 97,
+     "offered": 122,
+     "rate": 0.7950819672131147
+    }
+   },
+   "4": {
+    "label": "batchmtp-4",
+    "tps_median": 51.722765186206765,
+    "tps_min": 50.86251243331736,
+    "tps_max": 51.770841068421696,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 13.994148259182404,
+    "tpot_p50_ms": 72.41748641518986,
+    "ttft_p50_s": 1.185260534286499,
+    "accept_rate": 0.7967479674796748,
+    "expert_slots": 5293.0,
+    "slots_reported": 4.0,
+    "engine_spec": 4.0,
+    "drafting": "mtp",
+    "log_accept_rate": {
+     "accepted": 99,
+     "offered": 124,
+     "rate": 0.7983870967741935
+    }
+   }
+  },
+  "mtp_head_removed": {
+   "4": {
+    "label": "batch-nomtp-4",
+    "tps_median": 56.5418409034521,
+    "tps_min": 55.723019541486764,
+    "tps_max": 58.39841897117121,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 15.757082460728821,
+    "tpot_p50_ms": 63.6783945794199,
+    "ttft_p50_s": 1.0881688594818115,
+    "accept_rate": null,
+    "expert_slots": 6153.0,
+    "slots_reported": 4.0,
+    "engine_spec": 6.0,
+    "drafting": "off",
+    "log_accept_rate": {
+     "accepted": 0,
+     "offered": 0,
+     "rate": null
+    }
+   },
+   "5": {
+    "label": "batch-nomtp-5",
+    "tps_median": 59.60312276348847,
+    "tps_min": 58.440238462602316,
+    "tps_max": 60.58561548718886,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 12.846441791016378,
+    "tpot_p50_ms": 77.84256654627184,
+    "ttft_p50_s": 2.0541350841522217,
+    "accept_rate": null,
+    "expert_slots": 5670.0,
+    "slots_reported": 5.0,
+    "engine_spec": 6.0,
+    "drafting": "off",
+    "log_accept_rate": {
+     "accepted": 0,
+     "offered": 0,
+     "rate": null
+    }
+   },
+   "6": {
+    "label": "batch-nomtp-6",
+    "tps_median": 56.58188962145335,
+    "tps_min": 56.24991590102254,
+    "tps_max": 58.902375418992484,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 10.396323082563843,
+    "tpot_p50_ms": 95.62973976135254,
+    "ttft_p50_s": 2.1783995628356934,
+    "accept_rate": null,
+    "expert_slots": 5189.0,
+    "slots_reported": 6.0,
+    "engine_spec": 6.0,
+    "drafting": "off",
+    "log_accept_rate": {
+     "accepted": 0,
+     "offered": 0,
+     "rate": null
+    }
+   },
+   "7": {
+    "label": "batch-nomtp-7",
+    "tps_median": 58.437923531030115,
+    "tps_min": 57.26947037723719,
+    "tps_max": 60.1902238040326,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 8.564407064877486,
+    "tpot_p50_ms": 116.76231552572811,
+    "ttft_p50_s": 2.219318151473999,
+    "accept_rate": null,
+    "expert_slots": 4707.0,
+    "slots_reported": 7.0,
+    "engine_spec": 6.0,
+    "drafting": "off",
+    "log_accept_rate": {
+     "accepted": 0,
+     "offered": 0,
+     "rate": null
+    }
+   },
+   "8": {
+    "label": "batch-nomtp-8",
+    "tps_median": 55.26430281952777,
+    "tps_min": 53.489867336729326,
+    "tps_max": 55.64153682912226,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 7.204649328517109,
+    "tpot_p50_ms": 139.2865910249598,
+    "ttft_p50_s": 2.3859403133392334,
+    "accept_rate": null,
+    "expert_slots": 4226.0,
+    "slots_reported": 8.0,
+    "engine_spec": 6.0,
+    "drafting": "off",
+    "log_accept_rate": {
+     "accepted": 0,
+     "offered": 0,
+     "rate": null
+    }
+   }
+  },
+  "kv_resident_8192": {
+   "4": {
+    "label": "kvres8k-4",
+    "tps_median": 57.9078505179942,
+    "tps_min": 57.39274291120678,
+    "tps_max": 59.06788568639535,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 15.907239940006415,
+    "tpot_p50_ms": 63.02420765745874,
+    "ttft_p50_s": 1.1139283180236816,
+    "accept_rate": null,
+    "expert_slots": 5916.0,
+    "slots_reported": 4.0,
+    "engine_spec": 4.0,
+    "drafting": "mtp",
+    "log_accept_rate": {
+     "accepted": 2,
+     "offered": 2,
+     "rate": 1.0
+    }
+   },
+   "8": {
+    "label": "kvres8k-8",
+    "tps_median": 57.778206341434725,
+    "tps_min": 54.957788554818976,
+    "tps_max": 59.671410811995365,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 7.513899411334794,
+    "tpot_p50_ms": 133.1551290025898,
+    "ttft_p50_s": 2.2598931789398193,
+    "accept_rate": null,
+    "expert_slots": 4375.0,
+    "slots_reported": 8.0,
+    "engine_spec": 4.0,
+    "drafting": "mtp",
+    "log_accept_rate": {
+     "accepted": 1,
+     "offered": 1,
+     "rate": 1.0
+    }
+   }
+  },
+  "mtp_head_removed_kv_resident_8192": {
+   "4": {
+    "label": "nomtp-kvres8k-4",
+    "tps_median": 58.11566080430152,
+    "tps_min": 53.275540708074466,
+    "tps_max": 58.71254489437217,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 15.99679282667178,
+    "tpot_p50_ms": 62.81087538775276,
+    "ttft_p50_s": 1.147731065750122,
+    "accept_rate": null,
+    "expert_slots": 6635.0,
+    "slots_reported": 4.0,
+    "engine_spec": 6.0,
+    "drafting": "off",
+    "log_accept_rate": {
+     "accepted": 0,
+     "offered": 0,
+     "rate": null
+    }
+   },
+   "6": {
+    "label": "nomtp-kvres8k-6",
+    "tps_median": 60.181650238745455,
+    "tps_min": 59.69804097290922,
+    "tps_max": 60.42989070714614,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 10.826082466263728,
+    "tpot_p50_ms": 91.99415842692058,
+    "ttft_p50_s": 2.1084556579589844,
+    "accept_rate": null,
+    "expert_slots": 5864.0,
+    "slots_reported": 6.0,
+    "engine_spec": 6.0,
+    "drafting": "off",
+    "log_accept_rate": {
+     "accepted": 0,
+     "offered": 0,
+     "rate": null
+    }
+   },
+   "8": {
+    "label": "nomtp-kvres8k-8",
+    "tps_median": 58.28905599952711,
+    "tps_min": 57.53519708801861,
+    "tps_max": 63.18209393484076,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 7.4716981400964775,
+    "tpot_p50_ms": 133.94813444100174,
+    "ttft_p50_s": 2.3106486797332764,
+    "accept_rate": null,
+    "expert_slots": 5094.0,
+    "slots_reported": 8.0,
+    "engine_spec": 6.0,
+    "drafting": "off",
+    "log_accept_rate": {
+     "accepted": 0,
+     "offered": 0,
+     "rate": null
+    }
+   }
+  },
+  "long_prompt": {
+   "4": {
+    "label": "long-4",
+    "tps_median": 41.093092978734,
+    "tps_min": 40.234034412862556,
+    "tps_max": 41.534870653487786,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 13.202049444718329,
+    "tpot_p50_ms": 76.17385995154287,
+    "ttft_p50_s": 5.358074426651001,
+    "accept_rate": null,
+    "expert_slots": 5434.0,
+    "slots_reported": 4.0,
+    "engine_spec": 4.0,
+    "drafting": "mtp",
+    "log_accept_rate": {
+     "accepted": 1,
+     "offered": 1,
+     "rate": 1.0
+    }
+   },
+   "8": {
+    "label": "long-8",
+    "tps_median": 40.45913572574452,
+    "tps_min": 40.2366798507364,
+    "tps_max": 41.387557204251195,
+    "reps": null,
+    "first_pass_median": null,
+    "confirm_median": null,
+    "per_stream_tps": 5.67192600280685,
+    "tpot_p50_ms": 184.15307624667298,
+    "ttft_p50_s": 5.743345737457275,
+    "accept_rate": null,
+    "expert_slots": 3507.0,
+    "slots_reported": 8.0,
+    "engine_spec": 4.0,
+    "drafting": "mtp",
+    "log_accept_rate": {
+     "accepted": 1,
+     "offered": 2,
+     "rate": 0.5
+    }
+   }
+  }
+ },
+ "spec": {
+  "spec-2": {
+   "label": "spec-2",
+   "tps_median": 45.703623140958484,
+   "tps_min": 45.5994760444159,
+   "tps_max": 45.91091253389757,
+   "reps": null,
+   "first_pass_median": null,
+   "confirm_median": null,
+   "per_stream_tps": 57.763637161966095,
+   "tpot_p50_ms": 17.311929253970877,
+   "ttft_p50_s": 1.165597915649414,
+   "accept_rate": 0.7025229357798165,
+   "expert_slots": 7360.0,
+   "slots_reported": null,
+   "engine_spec": 4.0,
+   "drafting": "mtp",
+   "log_accept_rate": {
+    "accepted": 3064,
+    "offered": 4361,
+    "rate": 0.7025911488190782
+   }
+  },
+  "spec-3": {
+   "label": "spec-3",
+   "tps_median": 44.918821847409184,
+   "tps_min": 44.910792294665356,
+   "tps_max": 45.21470296048297,
+   "reps": null,
+   "first_pass_median": null,
+   "confirm_median": null,
+   "per_stream_tps": 56.099238421765385,
+   "tpot_p50_ms": 17.825553931441963,
+   "ttft_p50_s": 1.1637701988220215,
+   "accept_rate": 0.5943670595438543,
+   "expert_slots": 7360.0,
+   "slots_reported": null,
+   "engine_spec": 5.0,
+   "drafting": "mtp",
+   "log_accept_rate": {
+    "accepted": 3885,
+    "offered": 6535,
+    "rate": 0.5944912012241775
+   }
+  },
+  "spec-4": {
+   "label": "spec-4",
+   "tps_median": 44.42152692037929,
+   "tps_min": 44.219213330667635,
+   "tps_max": 44.91580705057636,
+   "reps": null,
+   "first_pass_median": null,
+   "confirm_median": null,
+   "per_stream_tps": 55.510235772818916,
+   "tpot_p50_ms": 18.01469559762992,
+   "ttft_p50_s": 1.119114875793457,
+   "accept_rate": 0.5229538461538461,
+   "expert_slots": 7358.0,
+   "slots_reported": null,
+   "engine_spec": 6.0,
+   "drafting": "mtp",
+   "log_accept_rate": {
+    "accepted": 4252,
+    "offered": 8128,
+    "rate": 0.5231299212598425
+   }
+  },
+  "spec-6": {
+   "label": "spec-6",
+   "tps_median": 40.322643221899014,
+   "tps_min": 39.720107849901964,
+   "tps_max": 40.35121733536883,
+   "reps": null,
+   "first_pass_median": null,
+   "confirm_median": null,
+   "per_stream_tps": 48.97718117363253,
+   "tpot_p50_ms": 20.39711802613501,
+   "ttft_p50_s": 1.1437804698944092,
+   "accept_rate": 0.433922882566187,
+   "expert_slots": 7356.0,
+   "slots_reported": null,
+   "engine_spec": 8.0,
+   "drafting": "mtp",
+   "log_accept_rate": {
+    "accepted": 3954,
+    "offered": 9108,
+    "rate": 0.43412384716732544
+   }
+  },
+  "spec-nomtp": {
+   "label": "spec-nomtp",
+   "tps_median": 41.337588609009956,
+   "tps_min": 41.29777984490226,
+   "tps_max": 41.375039745537336,
+   "reps": null,
+   "first_pass_median": null,
+   "confirm_median": null,
+   "per_stream_tps": 49.61518833659285,
+   "tpot_p50_ms": 20.082218506756952,
+   "ttft_p50_s": 1.0905616283416748,
+   "accept_rate": 0.3225806451612903,
+   "expert_slots": 8079.0,
+   "slots_reported": null,
+   "engine_spec": 6.0,
+   "drafting": "off",
+   "log_accept_rate": {
+    "accepted": 10,
+    "offered": 31,
+    "rate": 0.3225806451612903
+   }
+  },
+  "base-model": {
+   "label": "base-model",
+   "tps_median": 43.829458394218214,
+   "tps_min": 43.659171532834,
+   "tps_max": 44.20762848165768,
+   "reps": null,
+   "first_pass_median": null,
+   "confirm_median": null,
+   "per_stream_tps": 54.622643504085815,
+   "tpot_p50_ms": 18.282356449201995,
+   "ttft_p50_s": 1.15509033203125,
+   "accept_rate": 0.5133378601222233,
+   "expert_slots": 7358.0,
+   "slots_reported": null,
+   "engine_spec": 6.0,
+   "drafting": "mtp",
+   "log_accept_rate": {
+    "accepted": 6505,
+    "offered": 12303,
+    "rate": 0.5287328293912054
+   }
+  },
+  "base-modelbench": {
+   "label": "base-modelbench",
+   "tps_median": 36.41154596347788,
+   "tps_min": 35.765333713826,
+   "tps_max": 36.8840710036455,
+   "reps": null,
+   "first_pass_median": null,
+   "confirm_median": null,
+   "per_stream_tps": 48.572632955714354,
+   "tpot_p50_ms": 20.65571897170123,
+   "ttft_p50_s": 1.7824406623840332,
+   "accept_rate": 0.5267888005530591,
+   "expert_slots": 5593.0,
+   "slots_reported": null,
+   "engine_spec": 6.0,
+   "drafting": "mtp",
+   "log_accept_rate": {
+    "accepted": 4575,
+    "offered": 8682,
+    "rate": 0.5269523151347616
+   }
+  }
+ },
+ "prefill": {
+  "base-model|prefill-4096": {
+   "tps_median": 1179.5,
+   "tps_min": 1168.3,
+   "tps_max": 1202.5,
+   "prompt_tokens": 3304.0
+  },
+  "base-model|prefill-16384": {
+   "tps_median": 1419.7,
+   "tps_min": 1418.2,
+   "tps_max": 1434.4,
+   "prompt_tokens": 13057.0
+  },
+  "base-modelbench|prefill-4096": {
+   "tps_median": 393.8,
+   "tps_min": 392.1,
+   "tps_max": 396.6,
+   "prompt_tokens": 3303.0
+  },
+  "base-modelbench|prefill-16384": {
+   "tps_median": 497.1,
+   "tps_min": 494.8,
+   "tps_max": 500.8,
+   "prompt_tokens": 13053.0
+  },
+  "prefill-1024|prefill-4096": {
+   "tps_median": 631.7,
+   "tps_min": 619.6,
+   "tps_max": 635.0,
+   "prompt_tokens": 3301.0
+  },
+  "prefill-1024|prefill-16384": {
+   "tps_median": 686.3,
+   "tps_min": 685.1,
+   "tps_max": 686.3,
+   "prompt_tokens": 13055.0
+  },
+  "prefill-2048|prefill-4096": {
+   "tps_median": 875.0,
+   "tps_min": 856.1,
+   "tps_max": 885.3,
+   "prompt_tokens": 3305.0
+  },
+  "prefill-2048|prefill-16384": {
+   "tps_median": 1110.4,
+   "tps_min": 1110.2,
+   "tps_max": 1118.3,
+   "prompt_tokens": 13057.0
+  },
+  "prefill-256|prefill-4096": {
+   "tps_median": 656.6,
+   "tps_min": 639.8,
+   "tps_max": 657.0,
+   "prompt_tokens": 3303.0
+  },
+  "prefill-256|prefill-16384": {
+   "tps_median": 663.3,
+   "tps_min": 650.6,
+   "tps_max": 670.3,
+   "prompt_tokens": 13054.0
+  },
+  "prefill-4096|prefill-4096": {
+   "tps_median": 1149.6,
+   "tps_min": 1135.8,
+   "tps_max": 1169.6,
+   "prompt_tokens": 3301.0
+  },
+  "prefill-4096|prefill-16384": {
+   "tps_median": 1344.8,
+   "tps_min": 1338.5,
+   "tps_max": 1369.2,
+   "prompt_tokens": 13056.0
+  },
+  "prefill-512|prefill-4096": {
+   "tps_median": 871.7,
+   "tps_min": 857.9,
+   "tps_max": 872.1,
+   "prompt_tokens": 3305.0
+  },
+  "prefill-512|prefill-16384": {
+   "tps_median": 930.5,
+   "tps_min": 929.4,
+   "tps_max": 948.0,
+   "prompt_tokens": 13050.0
+  },
+  "prefill-8192|prefill-4096": {
+   "tps_median": 1151.3,
+   "tps_min": 1104.0,
+   "tps_max": 1163.3,
+   "prompt_tokens": 3301.0
+  },
+  "prefill-8192|prefill-16384": {
+   "tps_median": 1383.7,
+   "tps_min": 1376.8,
+   "tps_max": 1396.7,
+   "prompt_tokens": 13052.0
+  },
+  "prefill-auto|prefill-4096": {
+   "tps_median": 1140.2,
+   "tps_min": 1116.9,
+   "tps_max": 1157.9,
+   "prompt_tokens": 3305.0
+  },
+  "prefill-auto|prefill-16384": {
+   "tps_median": 1379.2,
+   "tps_min": 1374.0,
+   "tps_max": 1394.3,
+   "prompt_tokens": 13055.0
+  }
+ },
+ "vendor_tool_3090": {
+  "chat_decode": 54.1,
+  "agent_decode": 57.3,
+  "prefill_4k": 1273.4,
+  "prefill_16k": 1470.0,
+  "prefill_4k_tokens": 4019,
+  "prefill_16k_tokens": 16058
+ },
+ "vendor_4090_self_reported": {
+  "chat_decode": 69.9,
+  "agent_decode": 91.7,
+  "prefill_4k": 2042,
+  "prefill_16k": 3179
+ }
+}

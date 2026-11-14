@@ -1,0 +1,6 @@
+{"label": "spec-0", "base": "model.json", "set": {}, "remove": ["--mtp", "--spec", "--spec-min-p"], "phases": [{"mode": "decode", "duration": 45, "warmup": 15, "reps": 3, "max_tokens": 256, "prompt_words": 380, "concurrency": 1}]}
+{"label": "spec-1", "base": "model.json", "set": {"--spec": "1"}, "phases": [{"mode": "decode", "duration": 45, "warmup": 15, "reps": 3, "max_tokens": 256, "prompt_words": 380, "concurrency": 1}]}
+{"label": "spec-2", "base": "model.json", "set": {"--spec": "2"}, "phases": [{"mode": "decode", "duration": 45, "warmup": 15, "reps": 3, "max_tokens": 256, "prompt_words": 380, "concurrency": 1}]}
+{"label": "spec-3", "base": "model.json", "set": {"--spec": "3"}, "phases": [{"mode": "decode", "duration": 45, "warmup": 15, "reps": 3, "max_tokens": 256, "prompt_words": 380, "concurrency": 1}]}
+{"label": "spec-4", "base": "model.json", "set": {"--spec": "4"}, "phases": [{"mode": "decode", "duration": 45, "warmup": 15, "reps": 3, "max_tokens": 256, "prompt_words": 380, "concurrency": 1}]}
+{"label": "spec-6", "base": "model.json", "set": {"--spec": "6"}, "phases": [{"mode": "decode", "duration": 45, "warmup": 15, "reps": 3, "max_tokens": 256, "prompt_words": 380, "concurrency": 1}]}

@@ -1,0 +1,21 @@
+[01:02:53] start long-4
+{"label": "long-4", "phase": 0, "rep": 0, "agg_tps": 40.234034412862556, "prompt_tps_median": null, "errors": 0}
+{"label": "long-4", "phase": 0, "rep": 1, "agg_tps": 41.093092978734, "prompt_tps_median": null, "errors": 0}
+{"label": "long-4", "phase": 0, "rep": 2, "agg_tps": 41.534870653487786, "prompt_tps_median": null, "errors": 0}
+{"label": "long-4", "status": "ok", "load_s": 130.49066138267517, "wall_s": 362.4739625453949}
+[01:08:55] start long-8
+{"label": "long-8", "phase": 0, "rep": 0, "agg_tps": 40.2366798507364, "prompt_tps_median": null, "errors": 0}
+{"label": "long-8", "phase": 0, "rep": 1, "agg_tps": 40.45913572574452, "prompt_tps_median": null, "errors": 0}
+{"label": "long-8", "phase": 0, "rep": 2, "agg_tps": 41.387557204251195, "prompt_tps_median": null, "errors": 0}
+{"label": "long-8", "status": "ok", "load_s": 40.51978540420532, "wall_s": 293.8992178440094}
+[01:13:49] start kvres8k-4
+{"label": "kvres8k-4", "phase": 0, "rep": 0, "agg_tps": 57.9078505179942, "prompt_tps_median": null, "errors": 0}
+{"label": "kvres8k-4", "phase": 0, "rep": 1, "agg_tps": 57.39274291120678, "prompt_tps_median": null, "errors": 0}
+{"label": "kvres8k-4", "phase": 0, "rep": 2, "agg_tps": 59.06788568639535, "prompt_tps_median": null, "errors": 0}
+{"label": "kvres8k-4", "status": "ok", "load_s": 30.51470708847046, "wall_s": 248.19769263267517}
+[01:17:58] start kvres8k-8
+{"label": "kvres8k-8", "phase": 0, "rep": 0, "agg_tps": 54.957788554818976, "prompt_tps_median": null, "errors": 0}
+{"label": "kvres8k-8", "phase": 0, "rep": 1, "agg_tps": 57.778206341434725, "prompt_tps_median": null, "errors": 0}
+{"label": "kvres8k-8", "phase": 0, "rep": 2, "agg_tps": 59.671410811995365, "prompt_tps_median": null, "errors": 0}
+{"label": "kvres8k-8", "status": "ok", "load_s": 40.48272180557251, "wall_s": 275.7880771160126}
+SWEEP_DONE p5-long-kv

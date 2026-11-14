@@ -1,0 +1,179 @@
+{
+ "width": 1200,
+ "height": 675,
+ "backgroundColor": "#fcfcfb",
+ "textStyle": {
+  "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+  "color": "#0b0b0b"
+ },
+ "title": {
+  "text": "Prefill throughput vs. --prefill chunk",
+  "subtext": "Median prompt tok/s over 3 fresh prompts \u00b7 the engine reports prefill_cap 8192 for auto",
+  "left": 40,
+  "top": 28,
+  "textStyle": {
+   "fontSize": 26,
+   "fontWeight": "bold",
+   "color": "#0b0b0b",
+   "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+  },
+  "subtextStyle": {
+   "fontSize": 15,
+   "color": "#52514e",
+   "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+   "lineHeight": 22
+  }
+ },
+ "graphic": [
+  {
+   "type": "text",
+   "right": 40,
+   "bottom": 18,
+   "style": {
+    "text": "github.com/thehenrylabsdev/edge0-145b-rtx3090-benchmark",
+    "fill": "#8a8984",
+    "fontSize": 13,
+    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+   }
+  }
+ ],
+ "legend": {
+  "data": [
+   "~3.3K-token prompt",
+   "~13.1K-token prompt"
+  ],
+  "left": 40,
+  "top": 100,
+  "width": 1100,
+  "itemGap": 28,
+  "icon": "roundRect",
+  "itemWidth": 18,
+  "itemHeight": 6,
+  "textStyle": {
+   "color": "#0b0b0b",
+   "fontSize": 14
+  }
+ },
+ "grid": {
+  "left": 90,
+  "right": 50,
+  "top": 150,
+  "bottom": 90
+ },
+ "xAxis": {
+  "type": "category",
+  "name": "--prefill chunk (tokens)",
+  "nameLocation": "middle",
+  "nameGap": 40,
+  "data": [
+   "256",
+   "512",
+   "1024",
+   "2048",
+   "4096",
+   "8192",
+   "auto"
+  ],
+  "nameTextStyle": {
+   "color": "#52514e",
+   "fontSize": 14
+  },
+  "axisLabel": {
+   "color": "#0b0b0b",
+   "fontSize": 13
+  },
+  "axisTick": {
+   "show": false
+  },
+  "axisLine": {
+   "lineStyle": {
+    "color": "#8a8984"
+   }
+  }
+ },
+ "yAxis": {
+  "type": "value",
+  "name": "Prompt tok/s",
+  "nameLocation": "middle",
+  "nameGap": 56,
+  "nameTextStyle": {
+   "color": "#52514e",
+   "fontSize": 14
+  },
+  "axisLabel": {
+   "color": "#52514e",
+   "fontSize": 13
+  },
+  "splitLine": {
+   "lineStyle": {
+    "color": "#e9e8e4"
+   }
+  },
+  "axisLine": {
+   "show": false
+  },
+  "min": 0
+ },
+ "series": [
+  {
+   "name": "~3.3K-token prompt",
+   "type": "bar",
+   "barGap": "8%",
+   "barWidth": "32%",
+   "data": [
+    657.0,
+    872.0,
+    632.0,
+    875.0,
+    1150.0,
+    1151.0,
+    1140.0
+   ],
+   "itemStyle": {
+    "color": "#2a78d6",
+    "borderRadius": [
+     4,
+     4,
+     0,
+     0
+    ]
+   },
+   "label": {
+    "show": true,
+    "position": "top",
+    "color": "#0b0b0b",
+    "fontSize": 11
+   }
+  },
+  {
+   "name": "~13.1K-token prompt",
+   "type": "bar",
+   "barGap": "8%",
+   "barWidth": "32%",
+   "data": [
+    663.0,
+    930.0,
+    686.0,
+    1110.0,
+    1345.0,
+    1384.0,
+    1379.0
+   ],
+   "itemStyle": {
+    "color": "#eb6834",
+    "borderRadius": [
+     4,
+     4,
+     0,
+     0
+    ]
+   },
+   "label": {
+    "show": true,
+    "position": "top",
+    "color": "#0b0b0b",
+    "fontSize": 11
+   }
+  }
+ ]
+}

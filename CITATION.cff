@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use these results or this harness, please cite it as below."
+title: "Edge0-145B on a single RTX 3090: batch-size and throughput benchmark"
+type: dataset
+authors:
+  - alias: thehenrylabsdev
+repository-code: "https://github.com/thehenrylabsdev/edge0-145b-rtx3090-benchmark"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-14"
+keywords:
+  - llm-inference
+  - benchmark
+  - rtx-3090
+  - mixture-of-experts
+  - edge0
+  - llama.cpp
+  - ggml

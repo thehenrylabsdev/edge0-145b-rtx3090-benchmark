@@ -1,0 +1,360 @@
+{
+ "width": 1200,
+ "height": 675,
+ "backgroundColor": "#fcfcfb",
+ "textStyle": {
+  "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+  "color": "#0b0b0b"
+ },
+ "graphic": [
+  {
+   "type": "text",
+   "left": 48,
+   "top": 36,
+   "style": {
+    "text": "Edge0-145B on a single RTX 3090",
+    "fill": "#0b0b0b",
+    "fontSize": 40,
+    "fontWeight": "bold",
+    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+   }
+  },
+  {
+   "type": "text",
+   "left": 48,
+   "top": 92,
+   "style": {
+    "text": "145B-parameter latent MoE (~10B active) \u00b7 Q3_K \u00b7 24 GB VRAM \u00b7 edge0-strata (ggml)",
+    "fill": "#52514e",
+    "fontSize": 18,
+    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+   }
+  },
+  {
+   "type": "text",
+   "left": 48.0,
+   "top": 140,
+   "style": {
+    "text": "B* = 6",
+    "fill": "#2a78d6",
+    "fontSize": 44,
+    "fontWeight": "bold",
+    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+   }
+  },
+  {
+   "type": "text",
+   "left": 48.0,
+   "top": 196,
+   "style": {
+    "text": "requests batched for the\nhighest tokens/s",
+    "fill": "#52514e",
+    "fontSize": 16,
+    "lineHeight": 21,
+    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+   }
+  },
+  {
+   "type": "text",
+   "left": 324.0,
+   "top": 140,
+   "style": {
+    "text": "60.2",
+    "fill": "#2a78d6",
+    "fontSize": 44,
+    "fontWeight": "bold",
+    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+   }
+  },
+  {
+   "type": "text",
+   "left": 324.0,
+   "top": 196,
+   "style": {
+    "text": "tok/s aggregate at B*\n(MTP head off, 8K KV cells)",
+    "fill": "#52514e",
+    "fontSize": 16,
+    "lineHeight": 21,
+    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+   }
+  },
+  {
+   "type": "text",
+   "left": 600.0,
+   "top": 140,
+   "style": {
+    "text": "+29%",
+    "fill": "#2a78d6",
+    "fontSize": 44,
+    "fontWeight": "bold",
+    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+   }
+  },
+  {
+   "type": "text",
+   "left": 600.0,
+   "top": 196,
+   "style": {
+    "text": "vs one request at a time\n(46.8 tok/s)",
+    "fill": "#52514e",
+    "fontSize": 16,
+    "lineHeight": 21,
+    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+   }
+  },
+  {
+   "type": "text",
+   "left": 876.0,
+   "top": 140,
+   "style": {
+    "text": "1470",
+    "fill": "#2a78d6",
+    "fontSize": 44,
+    "fontWeight": "bold",
+    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+   }
+  },
+  {
+   "type": "text",
+   "left": 876.0,
+   "top": 196,
+   "style": {
+    "text": "tok/s prefill on a\n16K-token prompt",
+    "fill": "#52514e",
+    "fontSize": 16,
+    "lineHeight": 21,
+    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+   }
+  },
+  {
+   "type": "text",
+   "left": 48,
+   "bottom": 22,
+   "style": {
+    "text": "Method, scripts and raw data: github.com/thehenrylabsdev/edge0-145b-rtx3090-benchmark",
+    "fill": "#0b0b0b",
+    "fontSize": 16,
+    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+   }
+  }
+ ],
+ "title": {
+  "text": "Aggregate tok/s vs. requests batched (--batch N)",
+  "left": 48,
+  "top": 262,
+  "textStyle": {
+   "fontSize": 18,
+   "color": "#0b0b0b",
+   "fontWeight": "bold",
+   "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+  }
+ },
+ "legend": {
+  "data": [
+   "--batch N (shipped config, --spec 2)",
+   "MTP head removed",
+   "MTP head removed + --kv-resident 8192"
+  ],
+  "left": 40,
+  "top": 292,
+  "width": 1104,
+  "itemGap": 28,
+  "icon": "roundRect",
+  "itemWidth": 18,
+  "itemHeight": 6,
+  "textStyle": {
+   "color": "#0b0b0b",
+   "fontSize": 14
+  }
+ },
+ "grid": {
+  "left": 70,
+  "right": 48,
+  "top": 354,
+  "bottom": 92
+ },
+ "xAxis": {
+  "type": "category",
+  "name": "Batch slots (N)",
+  "nameLocation": "middle",
+  "nameGap": 30,
+  "data": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8"
+  ],
+  "nameTextStyle": {
+   "color": "#52514e",
+   "fontSize": 14
+  },
+  "axisLabel": {
+   "color": "#0b0b0b",
+   "fontSize": 13
+  },
+  "axisTick": {
+   "show": false
+  },
+  "axisLine": {
+   "lineStyle": {
+    "color": "#8a8984"
+   }
+  },
+  "boundaryGap": false
+ },
+ "yAxis": {
+  "type": "value",
+  "name": "",
+  "nameLocation": "middle",
+  "nameGap": 52,
+  "nameTextStyle": {
+   "color": "#52514e",
+   "fontSize": 14
+  },
+  "axisLabel": {
+   "color": "#52514e",
+   "fontSize": 13
+  },
+  "splitLine": {
+   "lineStyle": {
+    "color": "#e9e8e4"
+   }
+  },
+  "axisLine": {
+   "show": false
+  },
+  "min": 40,
+  "max": 65
+ },
+ "series": [
+  {
+   "name": "--batch N (shipped config, --spec 2)",
+   "type": "line",
+   "data": [
+    46.8,
+    50.2,
+    51.9,
+    53.5,
+    53.4,
+    54.4,
+    53.3,
+    48.1
+   ],
+   "symbol": "circle",
+   "symbolSize": 10,
+   "connectNulls": false,
+   "lineStyle": {
+    "width": 2.5,
+    "color": "#2a78d6",
+    "type": "solid"
+   },
+   "itemStyle": {
+    "color": "#2a78d6",
+    "borderColor": "#fcfcfb",
+    "borderWidth": 2
+   },
+   "label": {
+    "show": false,
+    "position": "top",
+    "color": "#0b0b0b",
+    "fontSize": 13,
+    "fontWeight": "bold",
+    "formatter": "{@[1]}"
+   }
+  },
+  {
+   "name": "MTP head removed",
+   "type": "line",
+   "data": [
+    null,
+    null,
+    null,
+    56.5,
+    59.6,
+    56.6,
+    58.4,
+    55.3
+   ],
+   "symbol": "circle",
+   "symbolSize": 10,
+   "connectNulls": false,
+   "lineStyle": {
+    "width": 2.5,
+    "color": "#1baf7a",
+    "type": "dashed"
+   },
+   "itemStyle": {
+    "color": "#1baf7a",
+    "borderColor": "#fcfcfb",
+    "borderWidth": 2
+   },
+   "label": {
+    "show": false,
+    "position": "top",
+    "color": "#0b0b0b",
+    "fontSize": 13,
+    "fontWeight": "bold",
+    "formatter": "{@[1]}"
+   }
+  },
+  {
+   "name": "MTP head removed + --kv-resident 8192",
+   "type": "line",
+   "data": [
+    null,
+    null,
+    null,
+    58.1,
+    null,
+    60.2,
+    null,
+    58.3
+   ],
+   "symbol": "circle",
+   "symbolSize": 10,
+   "connectNulls": false,
+   "lineStyle": {
+    "width": 2.5,
+    "color": "#e87ba4",
+    "type": "solid"
+   },
+   "itemStyle": {
+    "color": "#e87ba4",
+    "borderColor": "#fcfcfb",
+    "borderWidth": 2
+   },
+   "label": {
+    "show": true,
+    "position": "top",
+    "color": "#0b0b0b",
+    "fontSize": 13,
+    "fontWeight": "bold",
+    "formatter": "{@[1]}"
+   },
+   "markLine": {
+    "symbol": "none",
+    "silent": true,
+    "lineStyle": {
+     "color": "#52514e",
+     "type": "dotted",
+     "width": 1.5
+    },
+    "label": {
+     "formatter": "B* = 6",
+     "color": "#0b0b0b",
+     "fontSize": 14,
+     "fontWeight": "bold"
+    },
+    "data": [
+     {
+      "xAxis": "6"
+     }
+    ]
+   }
+  }
+ ]
+}

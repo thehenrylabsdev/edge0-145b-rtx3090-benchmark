@@ -1,0 +1,4 @@
+{"label": "batch-1", "base": "model.json", "parallel": 1, "set": {"--spec": "2"}, "phases": [{"mode": "decode", "duration": 45, "warmup": 15, "reps": 3, "max_tokens": 256, "prompt_words": 380, "concurrency": 1}]}
+{"label": "batch-2", "base": "model.json", "parallel": 2, "set": {"--spec": "2"}, "phases": [{"mode": "decode", "duration": 45, "warmup": 15, "reps": 3, "max_tokens": 256, "prompt_words": 380, "concurrency": 2}]}
+{"label": "batch-4", "base": "model.json", "parallel": 4, "set": {"--spec": "2"}, "phases": [{"mode": "decode", "duration": 45, "warmup": 15, "reps": 3, "max_tokens": 256, "prompt_words": 380, "concurrency": 4}]}
+{"label": "batch-8", "base": "model.json", "parallel": 8, "set": {"--spec": "2"}, "phases": [{"mode": "decode", "duration": 45, "warmup": 15, "reps": 3, "max_tokens": 256, "prompt_words": 380, "concurrency": 8}]}

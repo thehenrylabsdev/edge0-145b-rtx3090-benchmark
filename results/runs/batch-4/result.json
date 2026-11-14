@@ -1,0 +1,193 @@
+{
+ "label": "batch-4",
+ "spec": {
+  "label": "batch-4",
+  "base": "model.json",
+  "parallel": 4,
+  "set": {
+   "--spec": "2"
+  },
+  "phases": [
+   {
+    "mode": "decode",
+    "duration": 45,
+    "warmup": 15,
+    "reps": 3,
+    "max_tokens": 256,
+    "prompt_words": 380,
+    "concurrency": 4
+   }
+  ]
+ },
+ "phases": [
+  {
+   "phase": {
+    "mode": "decode",
+    "duration": 45,
+    "warmup": 15,
+    "reps": 3,
+    "max_tokens": 256,
+    "prompt_words": 380,
+    "concurrency": 4
+   },
+   "reps": [
+    {
+     "mode": "decode",
+     "concurrency": 4,
+     "duration": 45,
+     "warmup": 15,
+     "max_tokens": 256,
+     "requests": 14,
+     "errors": 0,
+     "error_sample": null,
+     "agg_tps": 53.53279637155908,
+     "per_stream_tps_p50": 14.520424911070931,
+     "tpot_p50_ms": 68.73169599794875,
+     "tpot_p99_ms": 77.09560955272002,
+     "ttft_p50_s": 1.1522891521453857,
+     "ttft_p99_s": 2.232419013977051,
+     "mean_completion_tokens": 256,
+     "text_head": "The life of the honeybee is a narrative of profound complexity, intricate social organization, and ecological necessity, yet it is often misunderstood by the human observer who views these tiny insect",
+     "gpu": "23886 MiB, 24576 MiB, 96 %, 1845 MHz, 4, 16, 337.85 W"
+    },
+    {
+     "mode": "decode",
+     "concurrency": 4,
+     "duration": 45,
+     "warmup": 15,
+     "max_tokens": 256,
+     "requests": 16,
+     "errors": 0,
+     "error_sample": null,
+     "agg_tps": 53.566090601203804,
+     "per_stream_tps_p50": 15.056367437087662,
+     "tpot_p50_ms": 66.43218900643143,
+     "tpot_p99_ms": 70.66640105901979,
+     "ttft_p50_s": 2.1269681453704834,
+     "ttft_p99_s": 2.1665573120117188,
+     "mean_completion_tokens": 256,
+     "text_head": "The exploration of the cosmos has always been driven by the human desire to look beyond the horizon, to pierce the veil of darkness that shrouds the universe, and to understand the fundamental laws go",
+     "gpu": "23924 MiB, 24576 MiB, 98 %, 1875 MHz, 4, 16, 332.51 W"
+    },
+    {
+     "mode": "decode",
+     "concurrency": 4,
+     "duration": 45,
+     "warmup": 15,
+     "max_tokens": 256,
+     "requests": 15,
+     "errors": 0,
+     "error_sample": null,
+     "agg_tps": 52.81773083692827,
+     "per_stream_tps_p50": 14.583431239327007,
+     "tpot_p50_ms": 68.57096821654076,
+     "tpot_p99_ms": 74.63671085881252,
+     "ttft_p50_s": 1.2421810626983643,
+     "ttft_p99_s": 2.4977965354919434,
+     "mean_completion_tokens": 256,
+     "text_head": "The study of ancient astronomy represents one of the most profound intellectual achievements in human history, a discipline that bridges the gap between the mundane daily life of early civilizations a",
+     "gpu": "23942 MiB, 24576 MiB, 74 %, 1890 MHz, 4, 16, 332.03 W"
+    }
+   ]
+  }
+ ],
+ "load_s": 40.46188259124756,
+ "status": "ok",
+ "gpu_after_load": "23626 MiB, 24576 MiB, 38 %, 1890 MHz, 4, 16, 156.38 W",
+ "status_json": {
+  "service": "strata",
+  "model": "edge0",
+  "loaded": true,
+  "auto_load": true,
+  "structured_output": {
+   "formats": [
+    "json_object",
+    "json_schema"
+   ],
+   "method": "prompt_and_validate",
+   "constrained_decoding": false,
+   "stream_buffered": true
+  },
+  "engine": "0.1.55",
+  "started": 1794615281,
+  "uptime_s": 228,
+  "cache_max_tokens": 131072,
+  "context": {
+   "native": 131072,
+   "max_positions": 131072
+  },
+  "concurrency": {
+   "serving": 4,
+   "requested": 4
+  },
+  "dialects": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "vision": {
+   "enabled": false,
+   "available": false,
+   "error": null
+  },
+  "image_generation": {
+   "enabled": false
+  },
+  "activity": {
+   "requests": 46,
+   "in_flight": 0,
+   "last_request_at": 1794615510
+  },
+  "last_timings": {
+   "cache_n": 0,
+   "prompt_n": 490,
+   "prompt_ms": 1058.0,
+   "prompt_per_token_ms": 2.159,
+   "prompt_per_second": 463.1,
+   "predicted_n": 256,
+   "predicted_ms": 11443.7,
+   "predicted_per_token_ms": 44.702,
+   "predicted_per_second": 22.4,
+   "draft_n": 0,
+   "draft_n_accepted": 0,
+   "at": 1794615510
+  },
+  "vram": {
+   "elastic": false
+  },
+  "machine": {
+   "at": 1794615510,
+   "gpu": {
+    "name": "NVIDIA GeForce RTX 3090",
+    "used_mib": 24373.0,
+    "total_mib": 24576.0,
+    "util_pct": 97,
+    "temp_c": 62,
+    "power_w": 336.681
+   },
+   "ram": {
+    "used_gib": 168.7,
+    "total_gib": 1007.6
+   }
+  }
+ },
+ "log_excerpt": [
+  "[strata] filling the GPU's expert cache (5434 experts, 8.25 GiB of VRAM) ...",
+  "[strata] done: 2 tokens in 0 s (18.3 tok/s) (stop, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 20 s (13.3 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 22 s (13.1 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 23 s (13.0 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 23 s (13.7 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 11 s (28.7 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 20 s (14.2 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 20 s (15.1 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 21 s (15.1 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 19 s (15.3 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 19 s (14.6 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 18 s (15.3 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 18 s (16.3 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 17 s (17.5 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 19 s (14.4 tok/s) (length, cancel=False), expert cache 100.0% hit"
+ ],
+ "wall_s": 266.0856852531433
+}

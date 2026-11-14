@@ -1,0 +1,1 @@
+{"label": "smoke", "base": "model.json", "phases": [{"mode": "decode", "concurrency": 1, "duration": 20, "warmup": 5, "reps": 1, "max_tokens": 128, "prompt_words": 100}]}

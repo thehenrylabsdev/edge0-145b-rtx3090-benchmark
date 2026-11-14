@@ -1,0 +1,41 @@
+[00:23:58] start batch-3
+{"label": "batch-3", "phase": 0, "rep": 0, "agg_tps": 51.73222953122274, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-3", "phase": 0, "rep": 1, "agg_tps": 51.941793988795, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-3", "phase": 0, "rep": 2, "agg_tps": 53.25513432741598, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-3", "status": "ok", "load_s": 30.504541873931885, "wall_s": 240.48776721954346}
+[00:27:59] start batch-5
+{"label": "batch-5", "phase": 0, "rep": 0, "agg_tps": 50.0491276936508, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-5", "phase": 0, "rep": 1, "agg_tps": 53.4285962754769, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-5", "phase": 0, "rep": 2, "agg_tps": 53.541614894920095, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-5", "status": "ok", "load_s": 70.50089621543884, "wall_s": 300.395569562912}
+[00:32:59] start batch-6
+{"label": "batch-6", "phase": 0, "rep": 0, "agg_tps": 51.95420167746315, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-6", "phase": 0, "rep": 1, "agg_tps": 54.427728484493045, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-6", "phase": 0, "rep": 2, "agg_tps": 55.40775930078412, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-6", "status": "ok", "load_s": 140.6180248260498, "wall_s": 367.0991053581238}
+[00:39:07] start batchmtp-2
+{"label": "batchmtp-2", "phase": 0, "rep": 0, "agg_tps": 50.696380251181075, "prompt_tps_median": null, "errors": 0}
+{"label": "batchmtp-2", "phase": 0, "rep": 1, "agg_tps": 51.75989282105044, "prompt_tps_median": null, "errors": 0}
+{"label": "batchmtp-2", "phase": 0, "rep": 2, "agg_tps": 52.53221954044609, "prompt_tps_median": null, "errors": 0}
+{"label": "batchmtp-2", "status": "ok", "load_s": 30.507588386535645, "wall_s": 220.19482278823853}
+[00:42:47] start batchmtp-3
+{"label": "batchmtp-3", "phase": 0, "rep": 0, "agg_tps": 51.79757081562366, "prompt_tps_median": null, "errors": 0}
+{"label": "batchmtp-3", "phase": 0, "rep": 1, "agg_tps": 52.34361267044572, "prompt_tps_median": null, "errors": 0}
+{"label": "batchmtp-3", "phase": 0, "rep": 2, "agg_tps": 53.64650840698265, "prompt_tps_median": null, "errors": 0}
+{"label": "batchmtp-3", "status": "ok", "load_s": 30.440520524978638, "wall_s": 239.06721305847168}
+[00:46:46] start batchmtp-4
+{"label": "batchmtp-4", "phase": 0, "rep": 0, "agg_tps": 51.722765186206765, "prompt_tps_median": null, "errors": 0}
+{"label": "batchmtp-4", "phase": 0, "rep": 1, "agg_tps": 50.86251243331736, "prompt_tps_median": null, "errors": 0}
+{"label": "batchmtp-4", "phase": 0, "rep": 2, "agg_tps": 51.770841068421696, "prompt_tps_median": null, "errors": 0}
+{"label": "batchmtp-4", "status": "ok", "load_s": 130.5394947528839, "wall_s": 329.6507375240326}
+[00:52:16] start batch-nomtp-4
+{"label": "batch-nomtp-4", "phase": 0, "rep": 0, "agg_tps": 56.5418409034521, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-nomtp-4", "phase": 0, "rep": 1, "agg_tps": 55.723019541486764, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-nomtp-4", "phase": 0, "rep": 2, "agg_tps": 58.39841897117121, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-nomtp-4", "status": "ok", "load_s": 30.46202516555786, "wall_s": 250.57511115074158}
+[00:56:27] start batch-nomtp-8
+{"label": "batch-nomtp-8", "phase": 0, "rep": 0, "agg_tps": 53.489867336729326, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-nomtp-8", "phase": 0, "rep": 1, "agg_tps": 55.26430281952777, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-nomtp-8", "phase": 0, "rep": 2, "agg_tps": 55.64153682912226, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-nomtp-8", "status": "ok", "load_s": 140.54543018341064, "wall_s": 386.10433316230774}
+SWEEP_DONE p5-batch-refine

@@ -1,0 +1,144 @@
+<svg width="1200" height="675" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 1200 675">
+<rect width="1200" height="675" x="0" y="0" fill="#fcfcfb"></rect>
+<text dominant-baseline="central" text-anchor="start" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" y="6.5" transform="translate(806.66 644)" fill="#8a8984">github.com/thehenrylabsdev/edge0-145b-rtx3090-benchmark</text>
+<path d="M90 585.5L1150 585.5" fill="none" pointer-events="visible" stroke="#e9e8e4" class="zr0-cls-0"></path>
+<path d="M90 485.5L1150 485.5" fill="none" pointer-events="visible" stroke="#e9e8e4" class="zr0-cls-0"></path>
+<path d="M90 385.5L1150 385.5" fill="none" pointer-events="visible" stroke="#e9e8e4" class="zr0-cls-0"></path>
+<path d="M90 286.5L1150 286.5" fill="none" pointer-events="visible" stroke="#e9e8e4" class="zr0-cls-0"></path>
+<path d="M90 236.5L1150 236.5" fill="none" pointer-events="visible" stroke="#e9e8e4" class="zr0-cls-0"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:14px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" xml:space="preserve" y="-7" transform="matrix(0,-1,1,0,42,410.5)" fill="#52514e">Aggregate output tok/s</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:14px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" xml:space="preserve" y="7" transform="translate(620 625)" fill="#52514e">Batch slots (N)</text>
+<path d="M90 585.5L1150 585.5" fill="none" pointer-events="visible" stroke="#8a8984" stroke-linecap="round" class="zr0-cls-0"></path>
+<text dominant-baseline="central" text-anchor="end" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" transform="translate(82 585)" fill="#52514e">30</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" transform="translate(82 485.2857)" fill="#52514e">40</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" transform="translate(82 385.5714)" fill="#52514e">50</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" transform="translate(82 285.8571)" fill="#52514e">60</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" transform="translate(82 236)" fill="#52514e">65</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" y="6.5" transform="translate(90 593)" fill="#0b0b0b">1</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" y="6.5" transform="translate(241.4286 593)" fill="#0b0b0b">2</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" y="6.5" transform="translate(392.8571 593)" fill="#0b0b0b">3</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" y="6.5" transform="translate(544.2857 593)" fill="#0b0b0b">4</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" y="6.5" transform="translate(695.7143 593)" fill="#0b0b0b">5</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" y="6.5" transform="translate(847.1429 593)" fill="#0b0b0b">6</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" y="6.5" transform="translate(998.5714 593)" fill="#0b0b0b">7</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" y="6.5" transform="translate(1150 593)" fill="#0b0b0b">8</text>
+<g clip-path="url(#zr0-c0)">
+<path d="M90 417.5L241.4 383.6L392.9 366.6L544.3 350.7L695.7 351.7L847.1 341.7L998.6 352.7L1150 404.5" fill="none" pointer-events="visible" stroke="#2a78d6" stroke-width="2.5" stroke-linejoin="bevel" class="zr0-cls-2"></path>
+</g>
+<g clip-path="url(#zr0-c1)">
+<path d="M90 417.5L241.4 367.6L392.9 362.6L544.3 368.6" fill="none" pointer-events="visible" stroke="#eb6834" stroke-width="2.5" stroke-dasharray="10,5" stroke-linejoin="bevel" class="zr0-cls-2"></path>
+</g>
+<g clip-path="url(#zr0-c2)">
+<path d="M544.3 320.8L695.7 289.8L847.1 319.8L998.6 301.8L1150 332.7" fill="none" pointer-events="visible" stroke="#1baf7a" stroke-width="2.5" stroke-dasharray="10,5" stroke-linejoin="bevel" class="zr0-cls-2"></path>
+</g>
+<g clip-path="url(#zr0-c3)">
+<path d="M544.3 306.8M1150 307.8" fill="none" pointer-events="visible" stroke="#eda100" stroke-width="2.5" stroke-dasharray="10,5" stroke-linejoin="bevel" class="zr0-cls-2"></path>
+</g>
+<g clip-path="url(#zr0-c4)">
+<path d="M544.3 304.8M847.1 283.9M1150 302.8" fill="none" pointer-events="visible" stroke="#e87ba4" stroke-width="2.5" stroke-dasharray="10,5" stroke-linejoin="bevel" class="zr0-cls-2"></path>
+</g>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,90,417.48)" fill="#2a78d6" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="chart" class="zr0-cls-3"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,241.4286,383.5771)" fill="#2a78d6" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="0" ecmeta_data_index="1" ecmeta_ssr_type="chart" class="zr0-cls-3"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,392.8571,366.6257)" fill="#2a78d6" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="0" ecmeta_data_index="2" ecmeta_ssr_type="chart" class="zr0-cls-3"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,544.2857,350.6714)" fill="#2a78d6" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="0" ecmeta_data_index="3" ecmeta_ssr_type="chart" class="zr0-cls-3"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,695.7143,351.6686)" fill="#2a78d6" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="0" ecmeta_data_index="4" ecmeta_ssr_type="chart" class="zr0-cls-3"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,847.1429,341.6971)" fill="#2a78d6" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="0" ecmeta_data_index="5" ecmeta_ssr_type="chart" class="zr0-cls-3"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,998.5714,352.6657)" fill="#2a78d6" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="0" ecmeta_data_index="6" ecmeta_ssr_type="chart" class="zr0-cls-3"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,1150,404.5172)" fill="#2a78d6" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="0" ecmeta_data_index="7" ecmeta_ssr_type="chart" class="zr0-cls-3"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,90,417.48)" fill="#eb6834" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="1" ecmeta_data_index="0" ecmeta_ssr_type="chart" class="zr0-cls-4"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,241.4286,367.6229)" fill="#eb6834" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="1" ecmeta_data_index="1" ecmeta_ssr_type="chart" class="zr0-cls-4"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,392.8571,362.6371)" fill="#eb6834" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="1" ecmeta_data_index="2" ecmeta_ssr_type="chart" class="zr0-cls-4"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,544.2857,368.62)" fill="#eb6834" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="1" ecmeta_data_index="3" ecmeta_ssr_type="chart" class="zr0-cls-4"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,544.2857,320.7571)" fill="#1baf7a" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="2" ecmeta_data_index="3" ecmeta_ssr_type="chart" class="zr0-cls-5"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,695.7143,289.8457)" fill="#1baf7a" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="2" ecmeta_data_index="4" ecmeta_ssr_type="chart" class="zr0-cls-5"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,847.1429,319.76)" fill="#1baf7a" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="2" ecmeta_data_index="5" ecmeta_ssr_type="chart" class="zr0-cls-5"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,998.5714,301.8114)" fill="#1baf7a" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="2" ecmeta_data_index="6" ecmeta_ssr_type="chart" class="zr0-cls-5"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,1150,332.7229)" fill="#1baf7a" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="2" ecmeta_data_index="7" ecmeta_ssr_type="chart" class="zr0-cls-5"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,544.2857,306.7971)" fill="#eda100" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="3" ecmeta_data_index="3" ecmeta_ssr_type="chart" class="zr0-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,1150,307.7943)" fill="#eda100" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="3" ecmeta_data_index="7" ecmeta_ssr_type="chart" class="zr0-cls-6"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,544.2857,304.8029)" fill="#e87ba4" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="4" ecmeta_data_index="3" ecmeta_ssr_type="chart" class="zr0-cls-7"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,847.1429,283.8629)" fill="#e87ba4" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="4" ecmeta_data_index="5" ecmeta_ssr_type="chart" class="zr0-cls-7"></path>
+<path d="M1 0A1 1 0 1 1 1 -0.1A1 1 0 0 1 1 0" transform="matrix(5,0,0,5,1150,302.8086)" fill="#e87ba4" stroke="#fcfcfb" stroke-width="0.4" ecmeta_series_index="4" ecmeta_data_index="7" ecmeta_ssr_type="chart" class="zr0-cls-7"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-weight:bold;" y="-6.5" transform="translate(544.2857 293.8029)" fill="#0b0b0b">58.1</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-weight:bold;" y="-6.5" transform="translate(847.1429 272.8629)" fill="#0b0b0b">60.2</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:13px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-weight:bold;" y="-6.5" transform="translate(1150 291.8086)" fill="#0b0b0b">58.3</text>
+<path d="M-5 -5l1004 0l0 66l-1004 0Z" transform="translate(45 123)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#b7b9be" stroke-width="0" class="zr0-cls-0"></path>
+<path d="M1.5 0L16.5 0A1.5 1.5 0 0 1 18 1.5L18 4.5A1.5 1.5 0 0 1 16.5 6L1.5 6A1.5 1.5 0 0 1 0 4.5L0 1.5A1.5 1.5 0 0 1 1.5 0Z" transform="translate(46 127)" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2" stroke-linecap="butt" stroke-miterlimit="10" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="legend" ecmeta_silent="true" class="zr0-cls-0"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:14px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" xml:space="preserve" x="23" y="3" transform="translate(46 127)" fill="#0b0b0b">--batch N (N = 1: MTP on; N ≥ 2: MTP drafting off)</text>
+<path d="M-1 -4l341.1 0l0 14l-341.1 0Z" transform="translate(46 127)" fill="none" pointer-events="visible" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="legend" class="zr0-cls-8"></path>
+<path d="M1.5 0L16.5 0A1.5 1.5 0 0 1 18 1.5L18 4.5A1.5 1.5 0 0 1 16.5 6L1.5 6A1.5 1.5 0 0 1 0 4.5L0 1.5A1.5 1.5 0 0 1 1.5 0Z" transform="translate(415.1 127)" fill="#eb6834" stroke="#fcfcfb" stroke-width="2" stroke-linecap="butt" stroke-miterlimit="10" ecmeta_series_index="1" ecmeta_data_index="1" ecmeta_ssr_type="legend" ecmeta_silent="true" class="zr0-cls-0"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:14px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" xml:space="preserve" x="23" y="3" transform="translate(415.1 127)" fill="#0b0b0b">--batch N --batch-mtp</text>
+<path d="M-1 -4l157.3 0l0 14l-157.3 0Z" transform="translate(415.1 127)" fill="none" pointer-events="visible" ecmeta_series_index="1" ecmeta_data_index="1" ecmeta_ssr_type="legend" class="zr0-cls-8"></path>
+<path d="M1.5 0L16.5 0A1.5 1.5 0 0 1 18 1.5L18 4.5A1.5 1.5 0 0 1 16.5 6L1.5 6A1.5 1.5 0 0 1 0 4.5L0 1.5A1.5 1.5 0 0 1 1.5 0Z" transform="translate(600.38 127)" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2" stroke-linecap="butt" stroke-miterlimit="10" ecmeta_series_index="2" ecmeta_data_index="2" ecmeta_ssr_type="legend" ecmeta_silent="true" class="zr0-cls-0"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:14px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" xml:space="preserve" x="23" y="3" transform="translate(600.38 127)" fill="#0b0b0b">--batch N, MTP head removed</text>
+<path d="M-1 -4l212.9 0l0 14l-212.9 0Z" transform="translate(600.38 127)" fill="none" pointer-events="visible" ecmeta_series_index="2" ecmeta_data_index="2" ecmeta_ssr_type="legend" class="zr0-cls-8"></path>
+<path d="M1.5 0L16.5 0A1.5 1.5 0 0 1 18 1.5L18 4.5A1.5 1.5 0 0 1 16.5 6L1.5 6A1.5 1.5 0 0 1 0 4.5L0 1.5A1.5 1.5 0 0 1 1.5 0Z" transform="translate(841.24 127)" fill="#eda100" stroke="#fcfcfb" stroke-width="2" stroke-linecap="butt" stroke-miterlimit="10" ecmeta_series_index="3" ecmeta_data_index="3" ecmeta_ssr_type="legend" ecmeta_silent="true" class="zr0-cls-0"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:14px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" xml:space="preserve" x="23" y="3" transform="translate(841.24 127)" fill="#0b0b0b">--batch N --kv-resident 8192</text>
+<path d="M-1 -4l198.7 0l0 14l-198.7 0Z" transform="translate(841.24 127)" fill="none" pointer-events="visible" ecmeta_series_index="3" ecmeta_data_index="3" ecmeta_ssr_type="legend" class="zr0-cls-8"></path>
+<path d="M1.5 0L16.5 0A1.5 1.5 0 0 1 18 1.5L18 4.5A1.5 1.5 0 0 1 16.5 6L1.5 6A1.5 1.5 0 0 1 0 4.5L0 1.5A1.5 1.5 0 0 1 1.5 0Z" transform="translate(46 169)" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2" stroke-linecap="butt" stroke-miterlimit="10" ecmeta_series_index="4" ecmeta_data_index="4" ecmeta_ssr_type="legend" ecmeta_silent="true" class="zr0-cls-0"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:14px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" xml:space="preserve" x="23" y="3" transform="translate(46 169)" fill="#0b0b0b">MTP head removed + --kv-resident 8192</text>
+<path d="M-1 -4l276.4 0l0 14l-276.4 0Z" transform="translate(46 169)" fill="none" pointer-events="visible" ecmeta_series_index="4" ecmeta_data_index="4" ecmeta_ssr_type="legend" class="zr0-cls-8"></path>
+<path d="M847 585L847 236" fill="none" pointer-events="visible" stroke="#52514e" stroke-width="1.5" stroke-dasharray="1.5" ecmeta_series_index="4" ecmeta_data_index="0" ecmeta_ssr_type="chart" ecmeta_silent="true" class="zr0-cls-0"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:14px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-weight:bold;" xml:space="preserve" y="-7" transform="translate(847.1429 231)" fill="#0b0b0b">B* = 6</text>
+<path d="M-5 -5l1057.8 0l0 90l-1057.8 0Z" transform="translate(45 33)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#3c3c41" stroke-width="0" class="zr0-cls-0"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:26px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-weight:bold;" xml:space="preserve" y="13" transform="translate(45 33)" fill="#0b0b0b">Aggregate decode throughput vs. batch slots</text>
+<path d="M0 36l1047.8 0l0 44l-1047.8 0Z" transform="translate(45 33)" fill="none" pointer-events="visible" class="zr0-cls-0"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:15px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" xml:space="preserve" y="47" transform="translate(45 33)" fill="#52514e">Edge0-145B Q3_K, one RTX 3090 · closed loop, N requests in flight · median of 3 × 45 s · gaps = not measured</text>
+<text dominant-baseline="central" text-anchor="start" style="font-size:15px;font-family:Helvetica Neue, Helvetica, Arial, sans-serif;" xml:space="preserve" y="69" transform="translate(45 33)" fill="#52514e">B* = 6 slots across all variants (--batch N, MTP head removed, --kv-resident 8192, peak 60.2 tok/s); plain --batch N alone: B* = 7 (its peak 54.4 tok/s at N = 6)</text>
+<defs >
+<clipPath id="zr0-c0">
+<path d="M88 234.8l1064 0l0 351.5l-1064 0Z" fill="#000" class="zr0-cls-1"></path>
+</clipPath>
+<clipPath id="zr0-c1">
+<path d="M88 234.8l1064 0l0 351.5l-1064 0Z" fill="#000" class="zr0-cls-1"></path>
+</clipPath>
+<clipPath id="zr0-c2">
+<path d="M88 234.8l1064 0l0 351.5l-1064 0Z" fill="#000" class="zr0-cls-1"></path>
+</clipPath>
+<clipPath id="zr0-c3">
+<path d="M88 234.8l1064 0l0 351.5l-1064 0Z" fill="#000" class="zr0-cls-1"></path>
+</clipPath>
+<clipPath id="zr0-c4">
+<path d="M88 234.8l1064 0l0 351.5l-1064 0Z" fill="#000" class="zr0-cls-1"></path>
+</clipPath>
+</defs>
+<style ><![CDATA[
+.zr0-cls-0:hover {
+pointer-events:none;
+}
+.zr0-cls-1:hover {
+cursor:pointer;
+fill:rgba(0,0,0,1);
+}
+.zr0-cls-2:hover {
+cursor:pointer;
+}
+.zr0-cls-3:hover {
+cursor:pointer;
+fill:rgba(46,132,235,1);
+}
+.zr0-cls-4:hover {
+cursor:pointer;
+fill:rgba(255,114,57,1);
+}
+.zr0-cls-5:hover {
+cursor:pointer;
+fill:rgba(29,192,134,1);
+}
+.zr0-cls-6:hover {
+cursor:pointer;
+fill:rgba(255,177,0,1);
+}
+.zr0-cls-7:hover {
+cursor:pointer;
+fill:rgba(255,135,180,1);
+}
+.zr0-cls-8:hover {
+cursor:pointer;
+fill:rgba(0,0,0,0);
+}
+
+]]>
+
+</style>
+</svg>

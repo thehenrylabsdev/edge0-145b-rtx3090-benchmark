@@ -1,0 +1,4 @@
+{"label": "long-4", "base": "model.json", "parallel": 4, "set": {"--spec": "2"}, "phases": [{"mode": "decode", "duration": 45, "warmup": 15, "reps": 3, "max_tokens": 256, "prompt_words": 3000, "concurrency": 4}]}
+{"label": "long-8", "base": "model.json", "parallel": 8, "set": {"--spec": "2"}, "phases": [{"mode": "decode", "duration": 45, "warmup": 15, "reps": 3, "max_tokens": 256, "prompt_words": 3000, "concurrency": 8}]}
+{"label": "kvres8k-4", "base": "model.json", "parallel": 4, "set": {"--spec": "2", "--kv-resident": "8192"}, "phases": [{"mode": "decode", "duration": 45, "warmup": 15, "reps": 3, "max_tokens": 256, "prompt_words": 380, "concurrency": 4}]}
+{"label": "kvres8k-8", "base": "model.json", "parallel": 8, "set": {"--spec": "2", "--kv-resident": "8192"}, "phases": [{"mode": "decode", "duration": 45, "warmup": 15, "reps": 3, "max_tokens": 256, "prompt_words": 380, "concurrency": 8}]}

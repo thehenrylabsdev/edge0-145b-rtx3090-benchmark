@@ -1,0 +1,4 @@
+edge0_commit=da9cc526747759227714ddde0728763d95306c04
+ggml_commit=3cf03257f219afbe7334045ff7c6a06ac68c627d
+nvcc=Build cuda_13.0.r13.0/compiler.36424714_0
+strata_bin=/opt/edge0/edge0-strata/build/strata

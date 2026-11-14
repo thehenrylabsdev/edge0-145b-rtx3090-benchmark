@@ -1,0 +1,202 @@
+{
+ "label": "nomtp-kvres8k-8",
+ "spec": {
+  "label": "nomtp-kvres8k-8",
+  "base": "model.json",
+  "parallel": 8,
+  "set": {
+   "--kv-resident": "8192"
+  },
+  "remove": [
+   "--mtp"
+  ],
+  "phases": [
+   {
+    "mode": "decode",
+    "duration": 45,
+    "warmup": 15,
+    "reps": 3,
+    "max_tokens": 256,
+    "prompt_words": 380,
+    "concurrency": 8
+   }
+  ]
+ },
+ "phases": [
+  {
+   "phase": {
+    "mode": "decode",
+    "duration": 45,
+    "warmup": 15,
+    "reps": 3,
+    "max_tokens": 256,
+    "prompt_words": 380,
+    "concurrency": 8
+   },
+   "reps": [
+    {
+     "mode": "decode",
+     "concurrency": 8,
+     "duration": 45,
+     "warmup": 15,
+     "max_tokens": 256,
+     "requests": 16,
+     "errors": 0,
+     "error_sample": null,
+     "agg_tps": 57.53519708801861,
+     "per_stream_tps_p50": 7.282458376267233,
+     "tpot_p50_ms": 139.3847951702043,
+     "tpot_p99_ms": 143.13202839271693,
+     "ttft_p50_s": 2.3106486797332764,
+     "ttft_p99_s": 2.400026798248291,
+     "mean_completion_tokens": 256,
+     "text_head": "The life of honeybees is a narrative of profound complexity, intricate social organization, and an almost mystical connection to the natural world that defies simple biological categorization. To unde",
+     "gpu": "24124 MiB, 24576 MiB, 68 %, 1920 MHz, 4, 16, 317.42 W"
+    },
+    {
+     "mode": "decode",
+     "concurrency": 8,
+     "duration": 45,
+     "warmup": 15,
+     "max_tokens": 256,
+     "requests": 16,
+     "errors": 0,
+     "error_sample": null,
+     "agg_tps": 58.28905599952711,
+     "per_stream_tps_p50": 7.4716981400964775,
+     "tpot_p50_ms": 133.94813444100174,
+     "tpot_p99_ms": 142.21246663261863,
+     "ttft_p50_s": 2.3116772174835205,
+     "ttft_p99_s": 2.4186599254608154,
+     "mean_completion_tokens": 256,
+     "text_head": "Volcanoes are among the most dramatic and powerful geological features on Earth, representing the interface between the planet\u2019s fiery interior and its dynamic surface. To understand volcanoes fully, ",
+     "gpu": "24126 MiB, 24576 MiB, 65 %, 1920 MHz, 4, 16, 318.17 W"
+    },
+    {
+     "mode": "decode",
+     "concurrency": 8,
+     "duration": 45,
+     "warmup": 15,
+     "max_tokens": 256,
+     "requests": 16,
+     "errors": 0,
+     "error_sample": null,
+     "agg_tps": 63.18209393484076,
+     "per_stream_tps_p50": 7.957797201033374,
+     "tpot_p50_ms": 125.90378966985966,
+     "tpot_p99_ms": 131.15634824715409,
+     "ttft_p50_s": 2.2109014987945557,
+     "ttft_p99_s": 2.272662401199341,
+     "mean_completion_tokens": 256,
+     "text_head": "The intricate tapestry of medieval trade routes represents one of the most significant economic and cultural phenomena in human history, a complex web of connections that spanned continents and facili",
+     "gpu": "24126 MiB, 24576 MiB, 63 %, 1905 MHz, 4, 16, 321.63 W"
+    }
+   ]
+  }
+ ],
+ "load_s": 140.46226000785828,
+ "status": "ok",
+ "gpu_after_load": "23652 MiB, 24576 MiB, 53 %, 1695 MHz, 4, 16, 130.41 W",
+ "status_json": {
+  "service": "strata",
+  "model": "edge0",
+  "loaded": true,
+  "auto_load": true,
+  "structured_output": {
+   "formats": [
+    "json_object",
+    "json_schema"
+   ],
+   "method": "prompt_and_validate",
+   "constrained_decoding": false,
+   "stream_buffered": true
+  },
+  "engine": "0.1.55",
+  "started": 1794620729,
+  "uptime_s": 228,
+  "cache_max_tokens": 131072,
+  "context": {
+   "native": 131072,
+   "max_positions": 131072
+  },
+  "concurrency": {
+   "serving": 8,
+   "requested": 8
+  },
+  "dialects": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "vision": {
+   "enabled": false,
+   "available": false,
+   "error": null
+  },
+  "image_generation": {
+   "enabled": false
+  },
+  "activity": {
+   "requests": 49,
+   "in_flight": 0,
+   "last_request_at": 1794620958
+  },
+  "last_timings": {
+   "cache_n": 0,
+   "prompt_n": 490,
+   "prompt_ms": 993.9,
+   "prompt_per_token_ms": 2.028,
+   "prompt_per_second": 493.0,
+   "predicted_n": 256,
+   "predicted_ms": 25395.0,
+   "predicted_per_token_ms": 99.199,
+   "predicted_per_second": 10.1,
+   "draft_n": 0,
+   "draft_n_accepted": 0,
+   "at": 1794620958
+  },
+  "vram": {
+   "elastic": false
+  },
+  "machine": {
+   "at": 1794620958,
+   "gpu": {
+    "name": "NVIDIA GeForce RTX 3090",
+    "used_mib": 24575.0,
+    "total_mib": 24576.0,
+    "util_pct": 99,
+    "temp_c": 64,
+    "power_w": 337.973
+   },
+   "ram": {
+    "used_gib": 133.9,
+    "total_gib": 1007.6
+   }
+  }
+ },
+ "log_excerpt": [
+  "[strata] filling the GPU's expert cache (5094 experts, 7.74 GiB of VRAM) ...",
+  "[strata] done: 2 tokens in 0 s (19.8 tok/s) (stop, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 37 s (7.1 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 39 s (7.0 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 39 s (7.2 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 40 s (7.2 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 41 s (7.1 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 43 s (7.1 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 44 s (7.1 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 45 s (7.0 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 37 s (7.2 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 43 s (7.5 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 45 s (7.5 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 31 s (8.8 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 30 s (9.2 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 35 s (7.7 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 39 s (8.0 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 40 s (8.0 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 41 s (8.0 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 42 s (8.0 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 30 s (9.2 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 28 s (10.1 tok/s) (length, cancel=False), expert cache 100.0% hit"
+ ],
+ "wall_s": 370.89889001846313
+}

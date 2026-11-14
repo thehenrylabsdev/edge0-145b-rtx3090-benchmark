@@ -1,0 +1,32 @@
+{
+ "label": "spec-0",
+ "spec": {
+  "label": "spec-0",
+  "base": "model.json",
+  "set": {},
+  "remove": [
+   "--mtp",
+   "--spec",
+   "--spec-min-p"
+  ],
+  "phases": [
+   {
+    "mode": "decode",
+    "duration": 45,
+    "warmup": 15,
+    "reps": 3,
+    "max_tokens": 256,
+    "prompt_words": 380,
+    "concurrency": 1
+   }
+  ]
+ },
+ "phases": [],
+ "load_s": null,
+ "status": "failed: server exited with 1 during load",
+ "log_excerpt": [
+  "  [strata] 2026-11-13 23:44:32 engine started: /opt/edge0/edge0-strata/build/strata --serve --pack . --native ./model-skeleton.gguf --native-dense-gguf ./model-skeleton.gguf --ple-gguf ./ple-fp8.gguf --ple-io direct --expert-profile ./profile.bin --expert-cache auto --prefill auto --pcie-frac 0.1 --max-context 131072 --kv int8 --kv-resident 32768 --vram-reserve-mib 700 --pool-workers 24 --pcie-mode dma",
+  "  strata generate: . is a native (IQ) pack: it needs --native SHARD1, --spec T (T >= 2) and --prefill CHUNK"
+ ],
+ "wall_s": 10.051125049591064
+}

@@ -1,0 +1,24 @@
+[23:13:50] start base-model
+{"label": "base-model", "phase": 0, "rep": 0, "agg_tps": 44.20762848165768, "prompt_tps_median": null, "errors": 0}
+{"label": "base-model", "phase": 0, "rep": 1, "agg_tps": 43.659171532834, "prompt_tps_median": null, "errors": 0}
+{"label": "base-model", "phase": 0, "rep": 2, "agg_tps": 43.829458394218214, "prompt_tps_median": null, "errors": 0}
+{"label": "base-model", "phase": 1, "rep": 0, "agg_tps": null, "prompt_tps_median": 1202.5, "errors": null}
+{"label": "base-model", "phase": 1, "rep": 1, "agg_tps": null, "prompt_tps_median": 1168.3, "errors": null}
+{"label": "base-model", "phase": 1, "rep": 2, "agg_tps": null, "prompt_tps_median": 1179.5, "errors": null}
+{"label": "base-model", "phase": 2, "rep": 0, "agg_tps": null, "prompt_tps_median": 1434.4, "errors": null}
+{"label": "base-model", "phase": 2, "rep": 1, "agg_tps": null, "prompt_tps_median": 1418.2, "errors": null}
+{"label": "base-model", "phase": 2, "rep": 2, "agg_tps": null, "prompt_tps_median": 1419.7, "errors": null}
+{"label": "base-model", "phase": 3, "rep": 0, "agg_tps": null, "prompt_tps_median": null, "errors": null}
+{"label": "base-model", "status": "ok", "load_s": 350.6823651790619, "wall_s": 775.380607843399}
+[23:26:46] start base-modelbench
+{"label": "base-modelbench", "phase": 0, "rep": 0, "agg_tps": 36.8840710036455, "prompt_tps_median": null, "errors": 0}
+{"label": "base-modelbench", "phase": 0, "rep": 1, "agg_tps": 36.41154596347788, "prompt_tps_median": null, "errors": 0}
+{"label": "base-modelbench", "phase": 0, "rep": 2, "agg_tps": 35.765333713826, "prompt_tps_median": null, "errors": 0}
+{"label": "base-modelbench", "phase": 1, "rep": 0, "agg_tps": null, "prompt_tps_median": 392.1, "errors": null}
+{"label": "base-modelbench", "phase": 1, "rep": 1, "agg_tps": null, "prompt_tps_median": 393.8, "errors": null}
+{"label": "base-modelbench", "phase": 1, "rep": 2, "agg_tps": null, "prompt_tps_median": 396.6, "errors": null}
+{"label": "base-modelbench", "phase": 2, "rep": 0, "agg_tps": null, "prompt_tps_median": 497.1, "errors": null}
+{"label": "base-modelbench", "phase": 2, "rep": 1, "agg_tps": null, "prompt_tps_median": 500.8, "errors": null}
+{"label": "base-modelbench", "phase": 2, "rep": 2, "agg_tps": null, "prompt_tps_median": 494.8, "errors": null}
+{"label": "base-modelbench", "status": "ok", "load_s": 10.680777549743652, "wall_s": 373.33132243156433}
+SWEEP_DONE p2-baseline

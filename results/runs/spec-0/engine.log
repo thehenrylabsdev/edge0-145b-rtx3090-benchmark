@@ -1,0 +1,5 @@
+[strata] 2026-11-13 23:44:32 engine started: /opt/edge0/edge0-strata/build/strata --serve --pack . --native ./model-skeleton.gguf --native-dense-gguf ./model-skeleton.gguf --ple-gguf ./ple-fp8.gguf --ple-io direct --expert-profile ./profile.bin --expert-cache auto --prefill auto --pcie-frac 0.1 --max-context 131072 --kv int8 --kv-resident 32768 --vram-reserve-mib 700 --pool-workers 24 --pcie-mode dma
+strata: sm_86 (Ampere): 9 exact speed switches on by default (STRATA_SM86_PERF=0 turns them off; a switch you set is kept): ADAPT_NOWAIT ADAPT_LAG CPU_IQ_ALL_EXACT1 SIDE_MIXER ATTN_DAILY GR_UP75 GU_SWIGLU QSA_ROWS B6_MMVQ_ROWS
+strata generate: memory guard: limit 116.4 GiB (source: cgroup), current 73.7 GiB, reclaimable cache credited 67.9 GiB; available 110.6 GiB (MemAvailable 934.1 GiB), floor 2560 MiB
+strata generate: this CPU has no AVX-512: the expert kernels run on AVX-2 (multi-token for the i-quant gate/up rows)
+strata generate: . is a native (IQ) pack: it needs --native SHARD1, --spec T (T >= 2) and --prefill CHUNK

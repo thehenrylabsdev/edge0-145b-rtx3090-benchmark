@@ -1,0 +1,331 @@
+{
+ "width": 1200,
+ "height": 675,
+ "backgroundColor": "#fcfcfb",
+ "textStyle": {
+  "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+  "color": "#0b0b0b"
+ },
+ "title": {
+  "text": "RTX 3090 vs. the vendor's RTX 4090 numbers",
+  "subtext": "Same Q3_K pack and the vendor's own tools/strata_bench.py \u00b7 3090 measured here, 4090 self-reported on the model card\n% = 3090 as a share of the 4090 figure \u00b7 prompts of 4,019 and 16,058 tokens",
+  "left": 40,
+  "top": 28,
+  "textStyle": {
+   "fontSize": 26,
+   "fontWeight": "bold",
+   "color": "#0b0b0b",
+   "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+  },
+  "subtextStyle": {
+   "fontSize": 15,
+   "color": "#52514e",
+   "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+   "lineHeight": 22
+  }
+ },
+ "graphic": [
+  {
+   "type": "text",
+   "right": 40,
+   "bottom": 18,
+   "style": {
+    "text": "github.com/thehenrylabsdev/edge0-145b-rtx3090-benchmark",
+    "fill": "#8a8984",
+    "fontSize": 13,
+    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+   }
+  }
+ ],
+ "legend": {
+  "data": [
+   "RTX 3090 (this run)",
+   "RTX 4090 (vendor, self-reported)"
+  ],
+  "left": 40,
+  "top": 118,
+  "width": 1100,
+  "itemGap": 28,
+  "icon": "roundRect",
+  "itemWidth": 18,
+  "itemHeight": 6,
+  "textStyle": {
+   "color": "#0b0b0b",
+   "fontSize": 14
+  }
+ },
+ "grid": [
+  {
+   "left": 90,
+   "right": 640,
+   "top": 170,
+   "bottom": 90
+  },
+  {
+   "left": 660,
+   "right": 50,
+   "top": 170,
+   "bottom": 90
+  }
+ ],
+ "xAxis": [
+  {
+   "type": "category",
+   "name": "",
+   "nameLocation": "middle",
+   "nameGap": 40,
+   "data": [
+    "Chat decode",
+    "Agent decode"
+   ],
+   "nameTextStyle": {
+    "color": "#52514e",
+    "fontSize": 14
+   },
+   "axisLabel": {
+    "color": "#0b0b0b",
+    "fontSize": 13
+   },
+   "axisTick": {
+    "show": false
+   },
+   "axisLine": {
+    "lineStyle": {
+     "color": "#8a8984"
+    }
+   },
+   "gridIndex": 0
+  },
+  {
+   "type": "category",
+   "name": "",
+   "nameLocation": "middle",
+   "nameGap": 40,
+   "data": [
+    "4K prefill",
+    "16K prefill"
+   ],
+   "nameTextStyle": {
+    "color": "#52514e",
+    "fontSize": 14
+   },
+   "axisLabel": {
+    "color": "#0b0b0b",
+    "fontSize": 13
+   },
+   "axisTick": {
+    "show": false
+   },
+   "axisLine": {
+    "lineStyle": {
+     "color": "#8a8984"
+    }
+   },
+   "gridIndex": 1
+  }
+ ],
+ "yAxis": [
+  {
+   "type": "value",
+   "name": "Decode tok/s",
+   "nameLocation": "middle",
+   "nameGap": 44,
+   "nameTextStyle": {
+    "color": "#52514e",
+    "fontSize": 14
+   },
+   "axisLabel": {
+    "color": "#52514e",
+    "fontSize": 13
+   },
+   "splitLine": {
+    "lineStyle": {
+     "color": "#e9e8e4"
+    }
+   },
+   "axisLine": {
+    "show": false
+   },
+   "gridIndex": 0,
+   "min": 0
+  },
+  {
+   "type": "value",
+   "name": "Prefill tok/s",
+   "nameLocation": "middle",
+   "nameGap": 56,
+   "nameTextStyle": {
+    "color": "#52514e",
+    "fontSize": 14
+   },
+   "axisLabel": {
+    "color": "#52514e",
+    "fontSize": 13
+   },
+   "splitLine": {
+    "lineStyle": {
+     "color": "#e9e8e4"
+    }
+   },
+   "axisLine": {
+    "show": false
+   },
+   "gridIndex": 1,
+   "min": 0
+  }
+ ],
+ "series": [
+  {
+   "name": "RTX 3090 (this run)",
+   "type": "bar",
+   "xAxisIndex": 0,
+   "yAxisIndex": 0,
+   "barGap": "8%",
+   "barWidth": "30%",
+   "data": [
+    {
+     "value": 54.1,
+     "label": {
+      "formatter": "54.1\n77%"
+     }
+    },
+    {
+     "value": 57.3,
+     "label": {
+      "formatter": "57.3\n62%"
+     }
+    }
+   ],
+   "itemStyle": {
+    "color": "#2a78d6",
+    "borderRadius": [
+     4,
+     4,
+     0,
+     0
+    ]
+   },
+   "label": {
+    "show": true,
+    "position": "top",
+    "color": "#0b0b0b",
+    "fontSize": 13,
+    "lineHeight": 18
+   }
+  },
+  {
+   "name": "RTX 4090 (vendor, self-reported)",
+   "type": "bar",
+   "xAxisIndex": 0,
+   "yAxisIndex": 0,
+   "barGap": "8%",
+   "barWidth": "30%",
+   "data": [
+    {
+     "value": 69.9,
+     "label": {
+      "formatter": "69.9"
+     }
+    },
+    {
+     "value": 91.7,
+     "label": {
+      "formatter": "91.7"
+     }
+    }
+   ],
+   "itemStyle": {
+    "color": "#b7b6b0",
+    "borderRadius": [
+     4,
+     4,
+     0,
+     0
+    ]
+   },
+   "label": {
+    "show": true,
+    "position": "top",
+    "color": "#0b0b0b",
+    "fontSize": 13,
+    "lineHeight": 18
+   }
+  },
+  {
+   "name": "RTX 3090 (this run)",
+   "type": "bar",
+   "xAxisIndex": 1,
+   "yAxisIndex": 1,
+   "barGap": "8%",
+   "barWidth": "30%",
+   "data": [
+    {
+     "value": 1273.4,
+     "label": {
+      "formatter": "1273\n62%"
+     }
+    },
+    {
+     "value": 1470.0,
+     "label": {
+      "formatter": "1470\n46%"
+     }
+    }
+   ],
+   "itemStyle": {
+    "color": "#2a78d6",
+    "borderRadius": [
+     4,
+     4,
+     0,
+     0
+    ]
+   },
+   "label": {
+    "show": true,
+    "position": "top",
+    "color": "#0b0b0b",
+    "fontSize": 13,
+    "lineHeight": 18
+   }
+  },
+  {
+   "name": "RTX 4090 (vendor, self-reported)",
+   "type": "bar",
+   "xAxisIndex": 1,
+   "yAxisIndex": 1,
+   "barGap": "8%",
+   "barWidth": "30%",
+   "data": [
+    {
+     "value": 2042,
+     "label": {
+      "formatter": "2042"
+     }
+    },
+    {
+     "value": 3179,
+     "label": {
+      "formatter": "3179"
+     }
+    }
+   ],
+   "itemStyle": {
+    "color": "#b7b6b0",
+    "borderRadius": [
+     4,
+     4,
+     0,
+     0
+    ]
+   },
+   "label": {
+    "show": true,
+    "position": "top",
+    "color": "#0b0b0b",
+    "fontSize": 13,
+    "lineHeight": 18
+   }
+  }
+ ]
+}

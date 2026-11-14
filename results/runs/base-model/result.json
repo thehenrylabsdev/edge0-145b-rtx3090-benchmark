@@ -1,0 +1,481 @@
+{
+ "label": "base-model",
+ "spec": {
+  "label": "base-model",
+  "base": "model.json",
+  "phases": [
+   {
+    "mode": "decode",
+    "duration": 60,
+    "warmup": 20,
+    "reps": 3,
+    "max_tokens": 256,
+    "prompt_words": 380,
+    "concurrency": 1
+   },
+   {
+    "mode": "prefill",
+    "prompt_tokens": 4096,
+    "per_rep": 1,
+    "reps": 3
+   },
+   {
+    "mode": "prefill",
+    "prompt_tokens": 16384,
+    "per_rep": 1,
+    "reps": 3
+   },
+   {
+    "mode": "strata_bench",
+    "runs": 3,
+    "reps": 1
+   }
+  ]
+ },
+ "phases": [
+  {
+   "phase": {
+    "mode": "decode",
+    "duration": 60,
+    "warmup": 20,
+    "reps": 3,
+    "max_tokens": 256,
+    "prompt_words": 380,
+    "concurrency": 1
+   },
+   "reps": [
+    {
+     "mode": "decode",
+     "concurrency": 1,
+     "duration": 60,
+     "warmup": 20,
+     "max_tokens": 256,
+     "requests": 14,
+     "errors": 0,
+     "error_sample": null,
+     "agg_tps": 44.20762848165768,
+     "per_stream_tps_p50": 54.67749507323724,
+     "tpot_p50_ms": 18.12566214916753,
+     "tpot_p99_ms": 19.752874561384612,
+     "ttft_p50_s": 1.15509033203125,
+     "ttft_p99_s": 1.219642162322998,
+     "mean_completion_tokens": 256,
+     "text_head": "The life of the honeybee is a narrative that defies simple biological categorization, weaving together elements of individual agency and collective consciousness in a way that challenges our very defi",
+     "gpu": "23782 MiB, 24576 MiB, 0 %, 1950 MHz, 4, 16, 270.65 W"
+    },
+    {
+     "mode": "decode",
+     "concurrency": 1,
+     "duration": 60,
+     "warmup": 20,
+     "max_tokens": 256,
+     "requests": 14,
+     "errors": 0,
+     "error_sample": null,
+     "agg_tps": 43.659171532834,
+     "per_stream_tps_p50": 53.57286158985468,
+     "tpot_p50_ms": 18.6281681060791,
+     "tpot_p99_ms": 19.698239307777552,
+     "ttft_p50_s": 1.160177230834961,
+     "ttft_p99_s": 1.2477126121520996,
+     "mean_completion_tokens": 256,
+     "text_head": "**The Eyes of Humanity: A Comprehensive Exploration of Space Telescopes and the Cosmic Frontier**\n\nThe human desire to look beyond the horizon is as ancient as civilization itself. From the first crud",
+     "gpu": "23782 MiB, 24576 MiB, 98 %, 1845 MHz, 4, 16, 345.60 W"
+    },
+    {
+     "mode": "decode",
+     "concurrency": 1,
+     "duration": 60,
+     "warmup": 20,
+     "max_tokens": 256,
+     "requests": 14,
+     "errors": 0,
+     "error_sample": null,
+     "agg_tps": 43.829458394218214,
+     "per_stream_tps_p50": 54.622643504085815,
+     "tpot_p50_ms": 18.282356449201995,
+     "tpot_p99_ms": 19.606772591085996,
+     "ttft_p50_s": 1.1392693519592285,
+     "ttft_p99_s": 1.2181360721588135,
+     "mean_completion_tokens": 256,
+     "text_head": "The study of the heavens has been one of humanity\u2019s oldest and most enduring intellectual pursuits. Ancient astronomy was not merely a collection of observations regarding the movement of stars and pl",
+     "gpu": "23782 MiB, 24576 MiB, 98 %, 1755 MHz, 4, 16, 347.12 W"
+    }
+   ]
+  },
+  {
+   "phase": {
+    "mode": "prefill",
+    "prompt_tokens": 4096,
+    "per_rep": 1,
+    "reps": 3
+   },
+   "reps": [
+    {
+     "mode": "prefill",
+     "target_tokens": 4096,
+     "reps": 1,
+     "rows": [
+      {
+       "prompt_tokens": 3305,
+       "ttft_s": 2.7811033725738525,
+       "prompt_tps": 1202.5,
+       "timings": {
+        "cache_n": 0,
+        "prompt_n": 3305,
+        "prompt_ms": 2748.5,
+        "prompt_per_token_ms": 0.832,
+        "prompt_per_second": 1202.5,
+        "predicted_n": 1,
+        "predicted_ms": 23.4,
+        "predicted_per_token_ms": 23.4,
+        "predicted_per_second": 42.7,
+        "draft_n": 0,
+        "draft_n_accepted": 0
+       }
+      }
+     ],
+     "prompt_tps_median": 1202.5,
+     "prompt_tokens_median": 3305,
+     "gpu": "23782 MiB, 24576 MiB, 100 %, 1935 MHz, 4, 16, 309.26 W"
+    },
+    {
+     "mode": "prefill",
+     "target_tokens": 4096,
+     "reps": 1,
+     "rows": [
+      {
+       "prompt_tokens": 3299,
+       "ttft_s": 2.8558502197265625,
+       "prompt_tps": 1168.3,
+       "timings": {
+        "cache_n": 0,
+        "prompt_n": 3299,
+        "prompt_ms": 2823.8,
+        "prompt_per_token_ms": 0.856,
+        "prompt_per_second": 1168.3,
+        "predicted_n": 1,
+        "predicted_ms": 24.0,
+        "predicted_per_token_ms": 24.0,
+        "predicted_per_second": 41.7,
+        "draft_n": 0,
+        "draft_n_accepted": 0
+       }
+      }
+     ],
+     "prompt_tps_median": 1168.3,
+     "prompt_tokens_median": 3299,
+     "gpu": "23782 MiB, 24576 MiB, 99 %, 1875 MHz, 4, 16, 305.79 W"
+    },
+    {
+     "mode": "prefill",
+     "target_tokens": 4096,
+     "reps": 1,
+     "rows": [
+      {
+       "prompt_tokens": 3304,
+       "ttft_s": 2.8323018550872803,
+       "prompt_tps": 1179.5,
+       "timings": {
+        "cache_n": 0,
+        "prompt_n": 3304,
+        "prompt_ms": 2801.1,
+        "prompt_per_token_ms": 0.848,
+        "prompt_per_second": 1179.5,
+        "predicted_n": 1,
+        "predicted_ms": 25.2,
+        "predicted_per_token_ms": 25.2,
+        "predicted_per_second": 39.7,
+        "draft_n": 0,
+        "draft_n_accepted": 0
+       }
+      }
+     ],
+     "prompt_tps_median": 1179.5,
+     "prompt_tokens_median": 3304,
+     "gpu": "23782 MiB, 24576 MiB, 100 %, 1725 MHz, 4, 16, 340.24 W"
+    }
+   ]
+  },
+  {
+   "phase": {
+    "mode": "prefill",
+    "prompt_tokens": 16384,
+    "per_rep": 1,
+    "reps": 3
+   },
+   "reps": [
+    {
+     "mode": "prefill",
+     "target_tokens": 16384,
+     "reps": 1,
+     "rows": [
+      {
+       "prompt_tokens": 13058,
+       "ttft_s": 9.149154424667358,
+       "prompt_tps": 1434.4,
+       "timings": {
+        "cache_n": 0,
+        "prompt_n": 13058,
+        "prompt_ms": 9103.6,
+        "prompt_per_token_ms": 0.697,
+        "prompt_per_second": 1434.4,
+        "predicted_n": 1,
+        "predicted_ms": 21.8,
+        "predicted_per_token_ms": 21.8,
+        "predicted_per_second": 45.9,
+        "draft_n": 0,
+        "draft_n_accepted": 0
+       }
+      }
+     ],
+     "prompt_tps_median": 1434.4,
+     "prompt_tokens_median": 13058,
+     "gpu": "23782 MiB, 24576 MiB, 100 %, 1935 MHz, 4, 16, 289.64 W"
+    },
+    {
+     "mode": "prefill",
+     "target_tokens": 16384,
+     "reps": 1,
+     "rows": [
+      {
+       "prompt_tokens": 13056,
+       "ttft_s": 9.246616125106812,
+       "prompt_tps": 1418.2,
+       "timings": {
+        "cache_n": 0,
+        "prompt_n": 13056,
+        "prompt_ms": 9206.3,
+        "prompt_per_token_ms": 0.705,
+        "prompt_per_second": 1418.2,
+        "predicted_n": 1,
+        "predicted_ms": 23.0,
+        "predicted_per_token_ms": 23.0,
+        "predicted_per_second": 43.5,
+        "draft_n": 0,
+        "draft_n_accepted": 0
+       }
+      }
+     ],
+     "prompt_tps_median": 1418.2,
+     "prompt_tokens_median": 13056,
+     "gpu": "23782 MiB, 24576 MiB, 86 %, 1875 MHz, 4, 16, 339.16 W"
+    },
+    {
+     "mode": "prefill",
+     "target_tokens": 16384,
+     "reps": 1,
+     "rows": [
+      {
+       "prompt_tokens": 13057,
+       "ttft_s": 9.244304656982422,
+       "prompt_tps": 1419.7,
+       "timings": {
+        "cache_n": 0,
+        "prompt_n": 13057,
+        "prompt_ms": 9197.0,
+        "prompt_per_token_ms": 0.704,
+        "prompt_per_second": 1419.7,
+        "predicted_n": 1,
+        "predicted_ms": 22.1,
+        "predicted_per_token_ms": 22.1,
+        "predicted_per_second": 45.2,
+        "draft_n": 0,
+        "draft_n_accepted": 0
+       }
+      }
+     ],
+     "prompt_tps_median": 1419.7,
+     "prompt_tokens_median": 13057,
+     "gpu": "23782 MiB, 24576 MiB, 100 %, 1935 MHz, 4, 16, 304.53 W"
+    }
+   ]
+  },
+  {
+   "phase": {
+    "mode": "strata_bench",
+    "runs": 3,
+    "reps": 1
+   },
+   "reps": [
+    {
+     "mode": "strata_bench",
+     "rc": 0,
+     "stdout": "",
+     "stderr": "",
+     "gpu": "23804 MiB, 24576 MiB, 17 %, 1950 MHz, 4, 16, 314.67 W"
+    }
+   ]
+  }
+ ],
+ "load_s": 350.6823651790619,
+ "status": "ok",
+ "gpu_after_load": "23660 MiB, 24576 MiB, 0 %, 1965 MHz, 4, 16, 148.24 W",
+ "status_json": {
+  "service": "strata",
+  "model": "edge0",
+  "loaded": true,
+  "auto_load": true,
+  "structured_output": {
+   "formats": [
+    "json_object",
+    "json_schema"
+   ],
+   "method": "prompt_and_validate",
+   "constrained_decoding": false,
+   "stream_buffered": true
+  },
+  "engine": "0.1.55",
+  "started": 1794611971,
+  "uptime_s": 430,
+  "cache_max_tokens": 131072,
+  "context": {
+   "native": 131072,
+   "max_positions": 131072
+  },
+  "concurrency": {
+   "serving": 1,
+   "requested": 1
+  },
+  "dialects": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "vision": {
+   "enabled": false,
+   "available": false,
+   "error": null
+  },
+  "image_generation": {
+   "enabled": false
+  },
+  "activity": {
+   "requests": 86,
+   "in_flight": 0,
+   "last_request_at": 1794612401
+  },
+  "last_timings": {
+   "cache_n": 10148,
+   "prompt_n": 4251,
+   "prompt_ms": 3672.9,
+   "prompt_per_token_ms": 0.864,
+   "prompt_per_second": 1157.4,
+   "predicted_n": 64,
+   "predicted_ms": 1221.4,
+   "predicted_per_token_ms": 19.084,
+   "predicted_per_second": 52.4,
+   "draft_n": 68,
+   "draft_n_accepted": 36,
+   "at": 1794612401
+  },
+  "vram": {
+   "elastic": false
+  },
+  "machine": {
+   "at": 1794612401,
+   "gpu": {
+    "name": "NVIDIA GeForce RTX 3090",
+    "used_mib": 24253.0,
+    "total_mib": 24576.0,
+    "util_pct": 98,
+    "temp_c": 63,
+    "power_w": 310.577
+   },
+   "ram": {
+    "used_gib": 156.3,
+    "total_gib": 1007.6
+   }
+  }
+ },
+ "log_excerpt": [
+  "[strata] filling the GPU's expert cache (7358 experts, 11.17 GiB of VRAM) ...",
+  "[strata] done: 2 tokens in 1 s (8.1 tok/s) (stop, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 7 s (50.6 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (55.1 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (53.1 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (56.0 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (55.2 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (54.6 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (55.2 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (55.7 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (54.3 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (55.7 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (52.9 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (52.0 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (57.1 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (51.6 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (50.7 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (57.5 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (53.2 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (56.6 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (52.6 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (51.2 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (53.6 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (55.6 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (56.3 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (52.9 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (53.5 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (56.0 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (52.5 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (59.0 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (56.1 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (54.8 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (54.6 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 5 s (58.9 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (54.7 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (51.0 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (51.0 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (53.5 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (54.8 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (56.3 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (55.9 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (53.6 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (53.0 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 6 s (53.9 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 1 tokens in 3 s (no speed) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 1 tokens in 3 s (no speed) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 1 tokens in 3 s (no speed) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 1 tokens in 9 s (no speed) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 1 tokens in 9 s (no speed) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 1 tokens in 9 s (no speed) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 24 tokens in 2 s (40.9 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 1 tokens in 1 s (no speed) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 1 tokens in 1 s (no speed) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 8 tokens in 1 s (44.6 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 100 tokens in 3 s (62.1 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 100 tokens in 3 s (50.2 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 100 tokens in 3 s (52.4 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 100 tokens in 2 s (61.8 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 100 tokens in 3 s (54.1 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 100 tokens in 3 s (47.8 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 100 tokens in 3 s (60.4 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 100 tokens in 3 s (54.9 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 100 tokens in 3 s (48.5 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 24 tokens in 4 s (47.3 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 24 tokens in 4 s (54.6 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 24 tokens in 4 s (57.9 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 24 tokens in 11 s (58.9 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 24 tokens in 11 s (59.7 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 24 tokens in 11 s (59.7 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 19 tokens in 2 s (44.8 tok/s) (stop, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 64 tokens in 3 s (52.2 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 57 tokens in 4 s (51.6 tok/s) (stop, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 46 tokens in 3 s (59.7 tok/s) (stop, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 64 tokens in 3 s (67.9 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 64 tokens in 5 s (59.9 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 32 tokens in 3 s (47.1 tok/s) (stop, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 62 tokens in 3 s (55.6 tok/s) (stop, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 64 tokens in 4 s (52.6 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 62 tokens in 3 s (60.0 tok/s) (stop, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 64 tokens in 3 s (73.6 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 64 tokens in 4 s (52.9 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 22 tokens in 2 s (44.5 tok/s) (stop, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 64 tokens in 3 s (57.3 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 64 tokens in 4 s (55.5 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 61 tokens in 3 s (63.9 tok/s) (stop, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 64 tokens in 3 s (67.1 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 64 tokens in 5 s (52.4 tok/s) (length, cancel=False), expert cache 100.0% hit"
+ ],
+ "wall_s": 775.380607843399
+}

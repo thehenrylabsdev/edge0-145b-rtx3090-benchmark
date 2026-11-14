@@ -1,0 +1,190 @@
+{
+ "label": "batchmtp-4",
+ "spec": {
+  "label": "batchmtp-4",
+  "base": "model.json",
+  "parallel": 4,
+  "set": {
+   "--spec": "2"
+  },
+  "add": [
+   "--batch-mtp"
+  ],
+  "phases": [
+   {
+    "mode": "decode",
+    "duration": 45,
+    "warmup": 15,
+    "reps": 3,
+    "max_tokens": 256,
+    "prompt_words": 380,
+    "concurrency": 4
+   }
+  ]
+ },
+ "phases": [
+  {
+   "phase": {
+    "mode": "decode",
+    "duration": 45,
+    "warmup": 15,
+    "reps": 3,
+    "max_tokens": 256,
+    "prompt_words": 380,
+    "concurrency": 4
+   },
+   "reps": [
+    {
+     "mode": "decode",
+     "concurrency": 4,
+     "duration": 45,
+     "warmup": 15,
+     "max_tokens": 256,
+     "requests": 12,
+     "errors": 0,
+     "error_sample": null,
+     "agg_tps": 51.722765186206765,
+     "per_stream_tps_p50": 14.0757454924543,
+     "tpot_p50_ms": 73.87400327944287,
+     "tpot_p99_ms": 85.90751816244686,
+     "ttft_p50_s": 1.185260534286499,
+     "ttft_p99_s": 2.3669559955596924,
+     "mean_completion_tokens": 256,
+     "text_head": "The architecture of modern graphics processing units (GPUs) represents a profound departure from the sequential logic of traditional central processing units (CPUs). While CPUs are designed to execute",
+     "gpu": "24124 MiB, 24576 MiB, 96 %, 1875 MHz, 4, 16, 336.91 W"
+    },
+    {
+     "mode": "decode",
+     "concurrency": 4,
+     "duration": 45,
+     "warmup": 15,
+     "max_tokens": 256,
+     "requests": 12,
+     "errors": 0,
+     "error_sample": null,
+     "agg_tps": 50.86251243331736,
+     "per_stream_tps_p50": 13.847536476700544,
+     "tpot_p50_ms": 72.41748641518986,
+     "tpot_p99_ms": 84.87123788571824,
+     "ttft_p50_s": 1.259061574935913,
+     "ttft_p99_s": 2.4455268383026123,
+     "mean_completion_tokens": 256,
+     "text_head": "The architecture of modern Graphics Processing Units (GPUs) represents a fundamental shift in how computational work is scheduled and executed, moving away from the sequential, latency-sensitive desig",
+     "gpu": "24124 MiB, 24576 MiB, 97 %, 1830 MHz, 4, 16, 337.96 W"
+    },
+    {
+     "mode": "decode",
+     "concurrency": 4,
+     "duration": 45,
+     "warmup": 15,
+     "max_tokens": 256,
+     "requests": 13,
+     "errors": 0,
+     "error_sample": null,
+     "agg_tps": 51.770841068421696,
+     "per_stream_tps_p50": 13.994148259182404,
+     "tpot_p50_ms": 71.45843973346786,
+     "tpot_p99_ms": 88.6828946132286,
+     "ttft_p50_s": 1.1643743515014648,
+     "ttft_p99_s": 2.4391841888427734,
+     "mean_completion_tokens": 256,
+     "text_head": "The history of medieval trade routes is not merely a chronicle of goods moving from point A to point B; it is the foundational narrative of the modern world\u2019s economic, cultural, and political archite",
+     "gpu": "24126 MiB, 24576 MiB, 98 %, 1860 MHz, 4, 16, 345.60 W"
+    }
+   ]
+  }
+ ],
+ "load_s": 130.5394947528839,
+ "status": "ok",
+ "gpu_after_load": "23650 MiB, 24576 MiB, 2 %, 1695 MHz, 4, 16, 116.20 W",
+ "status_json": {
+  "service": "strata",
+  "model": "edge0",
+  "loaded": true,
+  "auto_load": true,
+  "structured_output": {
+   "formats": [
+    "json_object",
+    "json_schema"
+   ],
+   "method": "prompt_and_validate",
+   "constrained_decoding": false,
+   "stream_buffered": true
+  },
+  "engine": "0.1.55",
+  "started": 1794617329,
+  "uptime_s": 199,
+  "cache_max_tokens": 131072,
+  "context": {
+   "native": 131072,
+   "max_positions": 131072
+  },
+  "concurrency": {
+   "serving": 4,
+   "requested": 4
+  },
+  "dialects": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "vision": {
+   "enabled": false,
+   "available": false,
+   "error": null
+  },
+  "image_generation": {
+   "enabled": false
+  },
+  "activity": {
+   "requests": 38,
+   "in_flight": 0,
+   "last_request_at": 1794617528
+  },
+  "last_timings": {
+   "cache_n": 0,
+   "prompt_n": 491,
+   "prompt_ms": 1038.0,
+   "prompt_per_token_ms": 2.114,
+   "prompt_per_second": 473.0,
+   "predicted_n": 256,
+   "predicted_ms": 5385.9,
+   "predicted_per_token_ms": 21.039,
+   "predicted_per_second": 47.5,
+   "draft_n": 123,
+   "draft_n_accepted": 98,
+   "at": 1794617528
+  },
+  "vram": {
+   "elastic": false
+  },
+  "machine": {
+   "at": 1794617529,
+   "gpu": {
+    "name": "NVIDIA GeForce RTX 3090",
+    "used_mib": 24575.0,
+    "total_mib": 24576.0,
+    "util_pct": 98,
+    "temp_c": 64,
+    "power_w": 345.924
+   },
+   "ram": {
+    "used_gib": 121.0,
+    "total_gib": 1007.6
+   }
+  }
+ },
+ "log_excerpt": [
+  "[strata] filling the GPU's expert cache (5293 experts, 8.04 GiB of VRAM) ...",
+  "[strata] done: 2 tokens in 1 s (16.2 tok/s) (stop, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 21 s (13.6 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 22 s (14.2 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 22 s (12.0 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 25 s (11.7 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 20 s (13.4 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 16 s (17.8 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 24 s (11.4 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 7 s (47.5 tok/s) (length, cancel=False), expert cache 100.0% hit"
+ ],
+ "wall_s": 329.6507375240326
+}

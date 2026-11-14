@@ -1,0 +1,21 @@
+[00:05:09] start batch-1
+{"label": "batch-1", "phase": 0, "rep": 0, "agg_tps": 46.378414033093094, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-1", "phase": 0, "rep": 1, "agg_tps": 46.86595343191673, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-1", "phase": 0, "rep": 2, "agg_tps": 46.7909326181408, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-1", "status": "ok", "load_s": 30.505597352981567, "wall_s": 216.9544656276703}
+[00:08:46] start batch-2
+{"label": "batch-2", "phase": 0, "rep": 0, "agg_tps": 51.20320636509031, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-2", "phase": 0, "rep": 1, "agg_tps": 50.18436268052837, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-2", "phase": 0, "rep": 2, "agg_tps": 47.899365142513105, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-2", "status": "ok", "load_s": 130.58257246017456, "wall_s": 325.0380051136017}
+[00:14:11] start batch-4
+{"label": "batch-4", "phase": 0, "rep": 0, "agg_tps": 53.53279637155908, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-4", "phase": 0, "rep": 1, "agg_tps": 53.566090601203804, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-4", "phase": 0, "rep": 2, "agg_tps": 52.81773083692827, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-4", "status": "ok", "load_s": 40.46188259124756, "wall_s": 266.0856852531433}
+[00:18:37] start batch-8
+{"label": "batch-8", "phase": 0, "rep": 0, "agg_tps": 46.40631727073958, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-8", "phase": 0, "rep": 1, "agg_tps": 48.1428119497015, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-8", "phase": 0, "rep": 2, "agg_tps": 49.377168313851385, "prompt_tps_median": null, "errors": 0}
+{"label": "batch-8", "status": "ok", "load_s": 40.61419892311096, "wall_s": 315.2230417728424}
+SWEEP_DONE p5-batch-coarse

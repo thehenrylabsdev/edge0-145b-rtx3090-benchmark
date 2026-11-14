@@ -1,0 +1,132 @@
+{
+ "width": 1200,
+ "height": 675,
+ "backgroundColor": "#fcfcfb",
+ "textStyle": {
+  "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+  "color": "#0b0b0b"
+ },
+ "title": {
+  "text": "Per-request speed falls as slots are added",
+  "subtext": "Median per-stream decode tok/s (each request's output tokens over its own decode time)",
+  "left": 40,
+  "top": 28,
+  "textStyle": {
+   "fontSize": 26,
+   "fontWeight": "bold",
+   "color": "#0b0b0b",
+   "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+  },
+  "subtextStyle": {
+   "fontSize": 15,
+   "color": "#52514e",
+   "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+   "lineHeight": 22
+  }
+ },
+ "graphic": [
+  {
+   "type": "text",
+   "right": 40,
+   "bottom": 18,
+   "style": {
+    "text": "github.com/thehenrylabsdev/edge0-145b-rtx3090-benchmark",
+    "fill": "#8a8984",
+    "fontSize": 13,
+    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+   }
+  }
+ ],
+ "grid": {
+  "left": 90,
+  "right": 50,
+  "top": 130,
+  "bottom": 90
+ },
+ "xAxis": {
+  "type": "category",
+  "name": "Batch slots (N), --batch N",
+  "nameLocation": "middle",
+  "nameGap": 40,
+  "data": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8"
+  ],
+  "nameTextStyle": {
+   "color": "#52514e",
+   "fontSize": 14
+  },
+  "axisLabel": {
+   "color": "#0b0b0b",
+   "fontSize": 13
+  },
+  "axisTick": {
+   "show": false
+  },
+  "axisLine": {
+   "lineStyle": {
+    "color": "#8a8984"
+   }
+  }
+ },
+ "yAxis": {
+  "type": "value",
+  "name": "Per-stream tok/s",
+  "nameLocation": "middle",
+  "nameGap": 48,
+  "nameTextStyle": {
+   "color": "#52514e",
+   "fontSize": 14
+  },
+  "axisLabel": {
+   "color": "#52514e",
+   "fontSize": 13
+  },
+  "splitLine": {
+   "lineStyle": {
+    "color": "#e9e8e4"
+   }
+  },
+  "axisLine": {
+   "show": false
+  }
+ },
+ "series": [
+  {
+   "type": "bar",
+   "barWidth": "45%",
+   "data": [
+    58.7,
+    27.4,
+    18.7,
+    14.6,
+    11.6,
+    9.3,
+    7.9,
+    6.3
+   ],
+   "itemStyle": {
+    "color": "#2a78d6",
+    "borderRadius": [
+     4,
+     4,
+     0,
+     0
+    ]
+   },
+   "label": {
+    "show": true,
+    "position": "top",
+    "color": "#0b0b0b",
+    "fontSize": 13,
+    "fontWeight": "bold"
+   }
+  }
+ ]
+}

@@ -1,0 +1,305 @@
+{
+ "label": "prefill-1024",
+ "spec": {
+  "label": "prefill-1024",
+  "base": "model.json",
+  "set": {
+   "--prefill": "1024"
+  },
+  "phases": [
+   {
+    "mode": "prefill",
+    "prompt_tokens": 4096,
+    "per_rep": 1,
+    "reps": 3
+   },
+   {
+    "mode": "prefill",
+    "prompt_tokens": 16384,
+    "per_rep": 1,
+    "reps": 3
+   }
+  ]
+ },
+ "phases": [
+  {
+   "phase": {
+    "mode": "prefill",
+    "prompt_tokens": 4096,
+    "per_rep": 1,
+    "reps": 3
+   },
+   "reps": [
+    {
+     "mode": "prefill",
+     "target_tokens": 4096,
+     "reps": 1,
+     "rows": [
+      {
+       "prompt_tokens": 3300,
+       "ttft_s": 5.360833406448364,
+       "prompt_tps": 619.6,
+       "timings": {
+        "cache_n": 0,
+        "prompt_n": 3300,
+        "prompt_ms": 5326.3,
+        "prompt_per_token_ms": 1.614,
+        "prompt_per_second": 619.6,
+        "predicted_n": 1,
+        "predicted_ms": 20.9,
+        "predicted_per_token_ms": 20.9,
+        "predicted_per_second": 47.8,
+        "draft_n": 0,
+        "draft_n_accepted": 0
+       }
+      }
+     ],
+     "prompt_tps_median": 619.6,
+     "prompt_tokens_median": 3300,
+     "gpu": "23758 MiB, 24576 MiB, 100 %, 1950 MHz, 4, 16, 290.93 W"
+    },
+    {
+     "mode": "prefill",
+     "target_tokens": 4096,
+     "reps": 1,
+     "rows": [
+      {
+       "prompt_tokens": 3301,
+       "ttft_s": 5.256164073944092,
+       "prompt_tps": 631.7,
+       "timings": {
+        "cache_n": 0,
+        "prompt_n": 3301,
+        "prompt_ms": 5225.4,
+        "prompt_per_token_ms": 1.583,
+        "prompt_per_second": 631.7,
+        "predicted_n": 1,
+        "predicted_ms": 21.5,
+        "predicted_per_token_ms": 21.5,
+        "predicted_per_second": 46.5,
+        "draft_n": 0,
+        "draft_n_accepted": 0
+       }
+      }
+     ],
+     "prompt_tps_median": 631.7,
+     "prompt_tokens_median": 3301,
+     "gpu": "23758 MiB, 24576 MiB, 85 %, 1950 MHz, 4, 16, 274.54 W"
+    },
+    {
+     "mode": "prefill",
+     "target_tokens": 4096,
+     "reps": 1,
+     "rows": [
+      {
+       "prompt_tokens": 3301,
+       "ttft_s": 5.2357213497161865,
+       "prompt_tps": 635.0,
+       "timings": {
+        "cache_n": 0,
+        "prompt_n": 3301,
+        "prompt_ms": 5198.5,
+        "prompt_per_token_ms": 1.575,
+        "prompt_per_second": 635.0,
+        "predicted_n": 1,
+        "predicted_ms": 21.4,
+        "predicted_per_token_ms": 21.4,
+        "predicted_per_second": 46.7,
+        "draft_n": 0,
+        "draft_n_accepted": 0
+       }
+      }
+     ],
+     "prompt_tps_median": 635.0,
+     "prompt_tokens_median": 3301,
+     "gpu": "23758 MiB, 24576 MiB, 100 %, 1950 MHz, 4, 16, 291.02 W"
+    }
+   ]
+  },
+  {
+   "phase": {
+    "mode": "prefill",
+    "prompt_tokens": 16384,
+    "per_rep": 1,
+    "reps": 3
+   },
+   "reps": [
+    {
+     "mode": "prefill",
+     "target_tokens": 16384,
+     "reps": 1,
+     "rows": [
+      {
+       "prompt_tokens": 13053,
+       "ttft_s": 19.072016716003418,
+       "prompt_tps": 686.3,
+       "timings": {
+        "cache_n": 0,
+        "prompt_n": 13053,
+        "prompt_ms": 19018.6,
+        "prompt_per_token_ms": 1.457,
+        "prompt_per_second": 686.3,
+        "predicted_n": 1,
+        "predicted_ms": 21.2,
+        "predicted_per_token_ms": 21.2,
+        "predicted_per_second": 47.2,
+        "draft_n": 0,
+        "draft_n_accepted": 0
+       }
+      }
+     ],
+     "prompt_tps_median": 686.3,
+     "prompt_tokens_median": 13053,
+     "gpu": "23758 MiB, 24576 MiB, 95 %, 1800 MHz, 4, 16, 311.12 W"
+    },
+    {
+     "mode": "prefill",
+     "target_tokens": 16384,
+     "reps": 1,
+     "rows": [
+      {
+       "prompt_tokens": 13057,
+       "ttft_s": 19.110209226608276,
+       "prompt_tps": 685.1,
+       "timings": {
+        "cache_n": 0,
+        "prompt_n": 13057,
+        "prompt_ms": 19058.7,
+        "prompt_per_token_ms": 1.46,
+        "prompt_per_second": 685.1,
+        "predicted_n": 1,
+        "predicted_ms": 21.3,
+        "predicted_per_token_ms": 21.3,
+        "predicted_per_second": 46.9,
+        "draft_n": 0,
+        "draft_n_accepted": 0
+       }
+      }
+     ],
+     "prompt_tps_median": 685.1,
+     "prompt_tokens_median": 13057,
+     "gpu": "23758 MiB, 24576 MiB, 56 %, 1935 MHz, 4, 16, 316.16 W"
+    },
+    {
+     "mode": "prefill",
+     "target_tokens": 16384,
+     "reps": 1,
+     "rows": [
+      {
+       "prompt_tokens": 13055,
+       "ttft_s": 19.07520842552185,
+       "prompt_tps": 686.3,
+       "timings": {
+        "cache_n": 0,
+        "prompt_n": 13055,
+        "prompt_ms": 19021.6,
+        "prompt_per_token_ms": 1.457,
+        "prompt_per_second": 686.3,
+        "predicted_n": 1,
+        "predicted_ms": 23.6,
+        "predicted_per_token_ms": 23.6,
+        "predicted_per_second": 42.4,
+        "draft_n": 0,
+        "draft_n_accepted": 0
+       }
+      }
+     ],
+     "prompt_tps_median": 686.3,
+     "prompt_tokens_median": 13055,
+     "gpu": "23758 MiB, 24576 MiB, 100 %, 1845 MHz, 4, 16, 317.91 W"
+    }
+   ]
+  }
+ ],
+ "load_s": 30.520230293273926,
+ "status": "ok",
+ "gpu_after_load": "23660 MiB, 24576 MiB, 65 %, 1695 MHz, 4, 16, 129.70 W",
+ "status_json": {
+  "service": "strata",
+  "model": "edge0",
+  "loaded": true,
+  "auto_load": true,
+  "structured_output": {
+   "formats": [
+    "json_object",
+    "json_schema"
+   ],
+   "method": "prompt_and_validate",
+   "constrained_decoding": false,
+   "stream_buffered": true
+  },
+  "engine": "0.1.55",
+  "started": 1794613086,
+  "uptime_s": 81,
+  "cache_max_tokens": 131072,
+  "context": {
+   "native": 131072,
+   "max_positions": 131072
+  },
+  "concurrency": {
+   "serving": 1,
+   "requested": 1
+  },
+  "dialects": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "vision": {
+   "enabled": false,
+   "available": false,
+   "error": null
+  },
+  "image_generation": {
+   "enabled": false
+  },
+  "activity": {
+   "requests": 7,
+   "in_flight": 0,
+   "last_request_at": 1794613168
+  },
+  "last_timings": {
+   "cache_n": 0,
+   "prompt_n": 13055,
+   "prompt_ms": 19021.6,
+   "prompt_per_token_ms": 1.457,
+   "prompt_per_second": 686.3,
+   "predicted_n": 1,
+   "predicted_ms": 23.6,
+   "predicted_per_token_ms": 23.6,
+   "predicted_per_second": 42.4,
+   "draft_n": 0,
+   "draft_n_accepted": 0,
+   "at": 1794613168
+  },
+  "vram": {
+   "elastic": false
+  },
+  "machine": {
+   "at": 1794613168,
+   "gpu": {
+    "name": "NVIDIA GeForce RTX 3090",
+    "used_mib": 24207.0,
+    "total_mib": 24576.0,
+    "util_pct": 100,
+    "temp_c": 58,
+    "power_w": 297.375
+   },
+   "ram": {
+    "used_gib": 156.8,
+    "total_gib": 1007.6
+   }
+  }
+ },
+ "log_excerpt": [
+  "[strata] filling the GPU's expert cache (7358 experts, 11.17 GiB of VRAM) ...",
+  "[strata] done: 2 tokens in 1 s (12.2 tok/s) (stop, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 1 tokens in 5 s (no speed) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 1 tokens in 5 s (no speed) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 1 tokens in 5 s (no speed) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 1 tokens in 19 s (no speed) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 1 tokens in 19 s (no speed) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 1 tokens in 19 s (no speed) (length, cancel=False), expert cache 100.0% hit"
+ ],
+ "wall_s": 107.9243175983429
+}

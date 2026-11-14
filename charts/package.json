@@ -1,0 +1,13 @@
+{
+  "name": "edge0-3090-charts",
+  "private": true,
+  "type": "module",
+  "description": "Renders charts/specs/*.chart.json (ECharts options) to SVG and 2x PNG in assets/, with no browser.",
+  "scripts": {
+    "render": "node render.mjs"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "echarts": "6.1.0"
+  }
+}

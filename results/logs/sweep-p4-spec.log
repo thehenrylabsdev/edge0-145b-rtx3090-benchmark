@@ -1,0 +1,25 @@
+[23:44:31] start spec-0
+{"label": "spec-0", "status": "failed: server exited with 1 during load", "load_s": null, "wall_s": 10.051125049591064}
+[23:44:41] start spec-1
+{"label": "spec-1", "status": "failed: server exited with 1 during load", "load_s": null, "wall_s": 10.046014547348022}
+[23:44:51] start spec-2
+{"label": "spec-2", "phase": 0, "rep": 0, "agg_tps": 45.703623140958484, "prompt_tps_median": null, "errors": 0}
+{"label": "spec-2", "phase": 0, "rep": 1, "agg_tps": 45.91091253389757, "prompt_tps_median": null, "errors": 0}
+{"label": "spec-2", "phase": 0, "rep": 2, "agg_tps": 45.5994760444159, "prompt_tps_median": null, "errors": 0}
+{"label": "spec-2", "status": "ok", "load_s": 30.486963510513306, "wall_s": 219.77333283424377}
+[23:48:31] start spec-3
+{"label": "spec-3", "phase": 0, "rep": 0, "agg_tps": 45.21470296048297, "prompt_tps_median": null, "errors": 0}
+{"label": "spec-3", "phase": 0, "rep": 1, "agg_tps": 44.918821847409184, "prompt_tps_median": null, "errors": 0}
+{"label": "spec-3", "phase": 0, "rep": 2, "agg_tps": 44.910792294665356, "prompt_tps_median": null, "errors": 0}
+{"label": "spec-3", "status": "ok", "load_s": 30.480130910873413, "wall_s": 222.7233180999756}
+[23:52:14] start spec-4
+{"label": "spec-4", "phase": 0, "rep": 0, "agg_tps": 44.42152692037929, "prompt_tps_median": null, "errors": 0}
+{"label": "spec-4", "phase": 0, "rep": 1, "agg_tps": 44.219213330667635, "prompt_tps_median": null, "errors": 0}
+{"label": "spec-4", "phase": 0, "rep": 2, "agg_tps": 44.91580705057636, "prompt_tps_median": null, "errors": 0}
+{"label": "spec-4", "status": "ok", "load_s": 120.65264701843262, "wall_s": 315.1696882247925}
+[23:57:29] start spec-6
+{"label": "spec-6", "phase": 0, "rep": 0, "agg_tps": 40.322643221899014, "prompt_tps_median": null, "errors": 0}
+{"label": "spec-6", "phase": 0, "rep": 1, "agg_tps": 39.720107849901964, "prompt_tps_median": null, "errors": 0}
+{"label": "spec-6", "phase": 0, "rep": 2, "agg_tps": 40.35121733536883, "prompt_tps_median": null, "errors": 0}
+{"label": "spec-6", "status": "ok", "load_s": 30.527429580688477, "wall_s": 226.87763667106628}
+SWEEP_DONE p4-spec

@@ -1,0 +1,6 @@
+[00:01:21] start spec-nomtp
+{"label": "spec-nomtp", "phase": 0, "rep": 0, "agg_tps": 41.337588609009956, "prompt_tps_median": null, "errors": 0}
+{"label": "spec-nomtp", "phase": 0, "rep": 1, "agg_tps": 41.375039745537336, "prompt_tps_median": null, "errors": 0}
+{"label": "spec-nomtp", "phase": 0, "rep": 2, "agg_tps": 41.29777984490226, "prompt_tps_median": null, "errors": 0}
+{"label": "spec-nomtp", "status": "ok", "load_s": 30.44613790512085, "wall_s": 221.921617269516}
+SWEEP_DONE p4b-nomtp

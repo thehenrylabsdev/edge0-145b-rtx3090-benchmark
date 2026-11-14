@@ -1,0 +1,188 @@
+{
+ "width": 1200,
+ "height": 675,
+ "backgroundColor": "#fcfcfb",
+ "textStyle": {
+  "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+  "color": "#0b0b0b"
+ },
+ "title": {
+  "text": "MTP verify window: the shortest window wins on a 3090",
+  "subtext": "N = 1, median aggregate tok/s, label = draft acceptance \u00b7 the MTP-head-removed run keeps --spec 4, so the engine's n-gram lookup still drafts",
+  "left": 40,
+  "top": 28,
+  "textStyle": {
+   "fontSize": 26,
+   "fontWeight": "bold",
+   "color": "#0b0b0b",
+   "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+  },
+  "subtextStyle": {
+   "fontSize": 15,
+   "color": "#52514e",
+   "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+   "lineHeight": 22
+  }
+ },
+ "graphic": [
+  {
+   "type": "text",
+   "right": 40,
+   "bottom": 18,
+   "style": {
+    "text": "github.com/thehenrylabsdev/edge0-145b-rtx3090-benchmark",
+    "fill": "#8a8984",
+    "fontSize": 13,
+    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+   }
+  }
+ ],
+ "grid": {
+  "left": 90,
+  "right": 50,
+  "top": 130,
+  "bottom": 100
+ },
+ "xAxis": {
+  "type": "category",
+  "name": "",
+  "nameLocation": "middle",
+  "nameGap": 0,
+  "data": [
+   "--spec 2",
+   "--spec 3",
+   "--spec 4\n(shipped)",
+   "--spec 6",
+   "MTP head\nremoved"
+  ],
+  "nameTextStyle": {
+   "color": "#52514e",
+   "fontSize": 14
+  },
+  "axisLabel": {
+   "color": "#0b0b0b",
+   "fontSize": 13
+  },
+  "axisTick": {
+   "show": false
+  },
+  "axisLine": {
+   "lineStyle": {
+    "color": "#8a8984"
+   }
+  }
+ },
+ "yAxis": {
+  "type": "value",
+  "name": "Aggregate output tok/s",
+  "nameLocation": "middle",
+  "nameGap": 48,
+  "nameTextStyle": {
+   "color": "#52514e",
+   "fontSize": 14
+  },
+  "axisLabel": {
+   "color": "#52514e",
+   "fontSize": 13
+  },
+  "splitLine": {
+   "lineStyle": {
+    "color": "#e9e8e4"
+   }
+  },
+  "axisLine": {
+   "show": false
+  },
+  "min": 0
+ },
+ "series": [
+  {
+   "type": "bar",
+   "barWidth": "50%",
+   "data": [
+    {
+     "value": 45.7,
+     "label": {
+      "formatter": "45.7\n70% acc."
+     },
+     "itemStyle": {
+      "color": "#2a78d6",
+      "borderRadius": [
+       4,
+       4,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "value": 44.9,
+     "label": {
+      "formatter": "44.9\n59% acc."
+     },
+     "itemStyle": {
+      "color": "#9ec5f4",
+      "borderRadius": [
+       4,
+       4,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "value": 44.4,
+     "label": {
+      "formatter": "44.4\n52% acc."
+     },
+     "itemStyle": {
+      "color": "#9ec5f4",
+      "borderRadius": [
+       4,
+       4,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "value": 40.3,
+     "label": {
+      "formatter": "40.3\n43% acc."
+     },
+     "itemStyle": {
+      "color": "#9ec5f4",
+      "borderRadius": [
+       4,
+       4,
+       0,
+       0
+      ]
+     }
+    },
+    {
+     "value": 41.3,
+     "label": {
+      "formatter": "41.3\n32% acc."
+     },
+     "itemStyle": {
+      "color": "#9ec5f4",
+      "borderRadius": [
+       4,
+       4,
+       0,
+       0
+      ]
+     }
+    }
+   ],
+   "label": {
+    "show": true,
+    "position": "top",
+    "color": "#0b0b0b",
+    "fontSize": 13,
+    "lineHeight": 18
+   }
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+[23:33:05] start prefill-256
+{"label": "prefill-256", "phase": 0, "rep": 0, "agg_tps": null, "prompt_tps_median": 639.8, "errors": null}
+{"label": "prefill-256", "phase": 0, "rep": 1, "agg_tps": null, "prompt_tps_median": 656.6, "errors": null}
+{"label": "prefill-256", "phase": 0, "rep": 2, "agg_tps": null, "prompt_tps_median": 657.0, "errors": null}
+{"label": "prefill-256", "phase": 1, "rep": 0, "agg_tps": null, "prompt_tps_median": 670.3, "errors": null}
+{"label": "prefill-256", "phase": 1, "rep": 1, "agg_tps": null, "prompt_tps_median": 650.6, "errors": null}
+{"label": "prefill-256", "phase": 1, "rep": 2, "agg_tps": null, "prompt_tps_median": 663.3, "errors": null}
+{"label": "prefill-256", "status": "ok", "load_s": 30.532153606414795, "wall_s": 109.57487177848816}
+[23:34:54] start prefill-512
+{"label": "prefill-512", "phase": 0, "rep": 0, "agg_tps": null, "prompt_tps_median": 857.9, "errors": null}
+{"label": "prefill-512", "phase": 0, "rep": 1, "agg_tps": null, "prompt_tps_median": 872.1, "errors": null}
+{"label": "prefill-512", "phase": 0, "rep": 2, "agg_tps": null, "prompt_tps_median": 871.7, "errors": null}
+{"label": "prefill-512", "phase": 1, "rep": 0, "agg_tps": null, "prompt_tps_median": 948.0, "errors": null}
+{"label": "prefill-512", "phase": 1, "rep": 1, "agg_tps": null, "prompt_tps_median": 930.5, "errors": null}
+{"label": "prefill-512", "phase": 1, "rep": 2, "agg_tps": null, "prompt_tps_median": 929.4, "errors": null}
+{"label": "prefill-512", "status": "ok", "load_s": 110.51927995681763, "wall_s": 169.1170084476471}
+[23:37:44] start prefill-1024
+{"label": "prefill-1024", "phase": 0, "rep": 0, "agg_tps": null, "prompt_tps_median": 619.6, "errors": null}
+{"label": "prefill-1024", "phase": 0, "rep": 1, "agg_tps": null, "prompt_tps_median": 631.7, "errors": null}
+{"label": "prefill-1024", "phase": 0, "rep": 2, "agg_tps": null, "prompt_tps_median": 635.0, "errors": null}
+{"label": "prefill-1024", "phase": 1, "rep": 0, "agg_tps": null, "prompt_tps_median": 686.3, "errors": null}
+{"label": "prefill-1024", "phase": 1, "rep": 1, "agg_tps": null, "prompt_tps_median": 685.1, "errors": null}
+{"label": "prefill-1024", "phase": 1, "rep": 2, "agg_tps": null, "prompt_tps_median": 686.3, "errors": null}
+{"label": "prefill-1024", "status": "ok", "load_s": 30.520230293273926, "wall_s": 107.9243175983429}
+[23:39:32] start prefill-2048
+{"label": "prefill-2048", "phase": 0, "rep": 0, "agg_tps": null, "prompt_tps_median": 856.1, "errors": null}
+{"label": "prefill-2048", "phase": 0, "rep": 1, "agg_tps": null, "prompt_tps_median": 875.0, "errors": null}
+{"label": "prefill-2048", "phase": 0, "rep": 2, "agg_tps": null, "prompt_tps_median": 885.3, "errors": null}
+{"label": "prefill-2048", "phase": 1, "rep": 0, "agg_tps": null, "prompt_tps_median": 1118.3, "errors": null}
+{"label": "prefill-2048", "phase": 1, "rep": 1, "agg_tps": null, "prompt_tps_median": 1110.2, "errors": null}
+{"label": "prefill-2048", "phase": 1, "rep": 2, "agg_tps": null, "prompt_tps_median": 1110.4, "errors": null}
+{"label": "prefill-2048", "status": "ok", "load_s": 30.540593147277832, "wall_s": 81.5764148235321}
+[23:40:53] start prefill-4096
+{"label": "prefill-4096", "phase": 0, "rep": 0, "agg_tps": null, "prompt_tps_median": 1135.8, "errors": null}
+{"label": "prefill-4096", "phase": 0, "rep": 1, "agg_tps": null, "prompt_tps_median": 1149.6, "errors": null}
+{"label": "prefill-4096", "phase": 0, "rep": 2, "agg_tps": null, "prompt_tps_median": 1169.6, "errors": null}
+{"label": "prefill-4096", "phase": 1, "rep": 0, "agg_tps": null, "prompt_tps_median": 1369.2, "errors": null}
+{"label": "prefill-4096", "phase": 1, "rep": 1, "agg_tps": null, "prompt_tps_median": 1344.8, "errors": null}
+{"label": "prefill-4096", "phase": 1, "rep": 2, "agg_tps": null, "prompt_tps_median": 1338.5, "errors": null}
+{"label": "prefill-4096", "status": "ok", "load_s": 30.527263402938843, "wall_s": 72.64287233352661}
+[23:42:06] start prefill-8192
+{"label": "prefill-8192", "phase": 0, "rep": 0, "agg_tps": null, "prompt_tps_median": 1104.0, "errors": null}
+{"label": "prefill-8192", "phase": 0, "rep": 1, "agg_tps": null, "prompt_tps_median": 1151.3, "errors": null}
+{"label": "prefill-8192", "phase": 0, "rep": 2, "agg_tps": null, "prompt_tps_median": 1163.3, "errors": null}
+{"label": "prefill-8192", "phase": 1, "rep": 0, "agg_tps": null, "prompt_tps_median": 1396.7, "errors": null}
+{"label": "prefill-8192", "phase": 1, "rep": 1, "agg_tps": null, "prompt_tps_median": 1376.8, "errors": null}
+{"label": "prefill-8192", "phase": 1, "rep": 2, "agg_tps": null, "prompt_tps_median": 1383.7, "errors": null}
+{"label": "prefill-8192", "status": "ok", "load_s": 30.551199436187744, "wall_s": 72.178631067276}
+[23:43:18] start prefill-auto
+{"label": "prefill-auto", "phase": 0, "rep": 0, "agg_tps": null, "prompt_tps_median": 1116.9, "errors": null}
+{"label": "prefill-auto", "phase": 0, "rep": 1, "agg_tps": null, "prompt_tps_median": 1140.2, "errors": null}
+{"label": "prefill-auto", "phase": 0, "rep": 2, "agg_tps": null, "prompt_tps_median": 1157.9, "errors": null}
+{"label": "prefill-auto", "phase": 1, "rep": 0, "agg_tps": null, "prompt_tps_median": 1394.3, "errors": null}
+{"label": "prefill-auto", "phase": 1, "rep": 1, "agg_tps": null, "prompt_tps_median": 1374.0, "errors": null}
+{"label": "prefill-auto", "phase": 1, "rep": 2, "agg_tps": null, "prompt_tps_median": 1379.2, "errors": null}
+{"label": "prefill-auto", "status": "ok", "load_s": 30.523128509521484, "wall_s": 72.20435285568237}
+SWEEP_DONE p3-prefill

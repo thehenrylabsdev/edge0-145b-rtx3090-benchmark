@@ -1,0 +1,188 @@
+{
+ "label": "batch-5",
+ "spec": {
+  "label": "batch-5",
+  "base": "model.json",
+  "parallel": 5,
+  "set": {
+   "--spec": "2"
+  },
+  "phases": [
+   {
+    "mode": "decode",
+    "duration": 45,
+    "warmup": 15,
+    "reps": 3,
+    "max_tokens": 256,
+    "prompt_words": 380,
+    "concurrency": 5
+   }
+  ]
+ },
+ "phases": [
+  {
+   "phase": {
+    "mode": "decode",
+    "duration": 45,
+    "warmup": 15,
+    "reps": 3,
+    "max_tokens": 256,
+    "prompt_words": 380,
+    "concurrency": 5
+   },
+   "reps": [
+    {
+     "mode": "decode",
+     "concurrency": 5,
+     "duration": 45,
+     "warmup": 15,
+     "max_tokens": 256,
+     "requests": 15,
+     "errors": 0,
+     "error_sample": null,
+     "agg_tps": 50.0491276936508,
+     "per_stream_tps_p50": 10.717933772786171,
+     "tpot_p50_ms": 93.30156550687903,
+     "tpot_p99_ms": 100.63463285857556,
+     "ttft_p50_s": 1.2464492321014404,
+     "ttft_p99_s": 2.3649652004241943,
+     "mean_completion_tokens": 256,
+     "text_head": "The concept of \"deep sea exploration\" is often romanticized in popular culture as a solitary journey into the abyss, a descent into a dark, silent void where only the pressure of the water and the",
+     "gpu": "23976 MiB, 24576 MiB, 62 %, 1950 MHz, 4, 16, 323.67 W"
+    },
+    {
+     "mode": "decode",
+     "concurrency": 5,
+     "duration": 45,
+     "warmup": 15,
+     "max_tokens": 256,
+     "requests": 15,
+     "errors": 0,
+     "error_sample": null,
+     "agg_tps": 53.4285962754769,
+     "per_stream_tps_p50": 11.636945013650797,
+     "tpot_p50_ms": 85.93320659562653,
+     "tpot_p99_ms": 92.46695649390126,
+     "ttft_p50_s": 2.1647229194641113,
+     "ttft_p99_s": 2.298336982727051,
+     "mean_completion_tokens": 256,
+     "text_head": "The Chemistry of Cooking: A Comprehensive Essay\n\nCooking is often viewed through the lens of art, tradition, and sensory pleasure. However, beneath the steam rising from a pot of soup or the golden cr",
+     "gpu": "23976 MiB, 24576 MiB, 92 %, 1830 MHz, 4, 16, 327.35 W"
+    },
+    {
+     "mode": "decode",
+     "concurrency": 5,
+     "duration": 45,
+     "warmup": 15,
+     "max_tokens": 256,
+     "requests": 15,
+     "errors": 0,
+     "error_sample": null,
+     "agg_tps": 53.541614894920095,
+     "per_stream_tps_p50": 11.945467693870933,
+     "tpot_p50_ms": 83.71375869302189,
+     "tpot_p99_ms": 92.99039934195724,
+     "ttft_p50_s": 2.2368743419647217,
+     "ttft_p99_s": 2.324104070663452,
+     "mean_completion_tokens": 256,
+     "text_head": "The history of ancient astronomy is a fascinating journey through the minds of early civilizations, revealing how they interpreted the cosmos and developed sophisticated systems to track celestial mov",
+     "gpu": "23976 MiB, 24576 MiB, 95 %, 1830 MHz, 4, 16, 332.63 W"
+    }
+   ]
+  }
+ ],
+ "load_s": 70.50089621543884,
+ "status": "ok",
+ "gpu_after_load": "23630 MiB, 24576 MiB, 92 %, 1905 MHz, 4, 16, 127.70 W",
+ "status_json": {
+  "service": "strata",
+  "model": "edge0",
+  "loaded": true,
+  "auto_load": true,
+  "structured_output": {
+   "formats": [
+    "json_object",
+    "json_schema"
+   ],
+   "method": "prompt_and_validate",
+   "constrained_decoding": false,
+   "stream_buffered": true
+  },
+  "engine": "0.1.55",
+  "started": 1794616148,
+  "uptime_s": 223,
+  "cache_max_tokens": 131072,
+  "context": {
+   "native": 131072,
+   "max_positions": 131072
+  },
+  "concurrency": {
+   "serving": 5,
+   "requested": 5
+  },
+  "dialects": [
+   "/v1/chat/completions",
+   "/v1/messages",
+   "/v1/responses"
+  ],
+  "vision": {
+   "enabled": false,
+   "available": false,
+   "error": null
+  },
+  "image_generation": {
+   "enabled": false
+  },
+  "activity": {
+   "requests": 46,
+   "in_flight": 0,
+   "last_request_at": 1794616371
+  },
+  "last_timings": {
+   "cache_n": 0,
+   "prompt_n": 491,
+   "prompt_ms": 1051.1,
+   "prompt_per_token_ms": 2.141,
+   "prompt_per_second": 467.1,
+   "predicted_n": 256,
+   "predicted_ms": 18315.3,
+   "predicted_per_token_ms": 71.544,
+   "predicted_per_second": 14.0,
+   "draft_n": 0,
+   "draft_n_accepted": 0,
+   "at": 1794616371
+  },
+  "vram": {
+   "elastic": false
+  },
+  "machine": {
+   "at": 1794616371,
+   "gpu": {
+    "name": "NVIDIA GeForce RTX 3090",
+    "used_mib": 24425.0,
+    "total_mib": 24576.0,
+    "util_pct": 95,
+    "temp_c": 65,
+    "power_w": 332.632
+   },
+   "ram": {
+    "used_gib": 174.9,
+    "total_gib": 1007.6
+   }
+  }
+ },
+ "log_excerpt": [
+  "[strata] filling the GPU's expert cache (4951 experts, 7.52 GiB of VRAM) ...",
+  "[strata] done: 2 tokens in 0 s (16.9 tok/s) (stop, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 26 s (10.2 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 28 s (10.1 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 29 s (10.0 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 29 s (10.4 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 30 s (10.3 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 24 s (11.2 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 24 s (11.7 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 24 s (11.7 tok/s) (length, cancel=False), expert cache 100.0% hit",
+  "[strata] done: 256 tokens in 26 s (12.6 tok/s) (length, cancel=False), expert cache 100.0% hit"
+ ],
+ "wall_s": 300.395569562912
+}

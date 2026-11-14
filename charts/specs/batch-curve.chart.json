@@ -1,0 +1,320 @@
+{
+ "width": 1200,
+ "height": 675,
+ "backgroundColor": "#fcfcfb",
+ "textStyle": {
+  "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+  "color": "#0b0b0b"
+ },
+ "title": {
+  "text": "Aggregate decode throughput vs. batch slots",
+  "subtext": "Edge0-145B Q3_K, one RTX 3090 \u00b7 closed loop, N requests in flight \u00b7 median of 3 \u00d7 45 s \u00b7 gaps = not measured\nB* = 6 slots across all variants (--batch N, MTP head removed, --kv-resident 8192, peak 60.2 tok/s); plain --batch N alone: B* = 7 (its peak 54.4 tok/s at N = 6)",
+  "left": 40,
+  "top": 28,
+  "textStyle": {
+   "fontSize": 26,
+   "fontWeight": "bold",
+   "color": "#0b0b0b",
+   "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+  },
+  "subtextStyle": {
+   "fontSize": 15,
+   "color": "#52514e",
+   "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif",
+   "lineHeight": 22
+  }
+ },
+ "graphic": [
+  {
+   "type": "text",
+   "right": 40,
+   "bottom": 18,
+   "style": {
+    "text": "github.com/thehenrylabsdev/edge0-145b-rtx3090-benchmark",
+    "fill": "#8a8984",
+    "fontSize": 13,
+    "fontFamily": "Helvetica Neue, Helvetica, Arial, sans-serif"
+   }
+  }
+ ],
+ "legend": {
+  "data": [
+   "--batch N (N = 1: MTP on; N \u2265 2: MTP drafting off)",
+   "--batch N --batch-mtp",
+   "--batch N, MTP head removed",
+   "--batch N --kv-resident 8192",
+   "MTP head removed + --kv-resident 8192"
+  ],
+  "left": 40,
+  "top": 118,
+  "width": 1100,
+  "itemGap": 28,
+  "icon": "roundRect",
+  "itemWidth": 18,
+  "itemHeight": 6,
+  "textStyle": {
+   "color": "#0b0b0b",
+   "fontSize": 14
+  }
+ },
+ "grid": {
+  "left": 90,
+  "right": 50,
+  "top": 236,
+  "bottom": 90
+ },
+ "xAxis": {
+  "type": "category",
+  "name": "Batch slots (N)",
+  "nameLocation": "middle",
+  "nameGap": 40,
+  "data": [
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6",
+   "7",
+   "8"
+  ],
+  "nameTextStyle": {
+   "color": "#52514e",
+   "fontSize": 14
+  },
+  "axisLabel": {
+   "color": "#0b0b0b",
+   "fontSize": 13
+  },
+  "axisTick": {
+   "show": false
+  },
+  "axisLine": {
+   "lineStyle": {
+    "color": "#8a8984"
+   }
+  },
+  "boundaryGap": false
+ },
+ "yAxis": {
+  "type": "value",
+  "name": "Aggregate output tok/s",
+  "nameLocation": "middle",
+  "nameGap": 48,
+  "nameTextStyle": {
+   "color": "#52514e",
+   "fontSize": 14
+  },
+  "axisLabel": {
+   "color": "#52514e",
+   "fontSize": 13
+  },
+  "splitLine": {
+   "lineStyle": {
+    "color": "#e9e8e4"
+   }
+  },
+  "axisLine": {
+   "show": false
+  },
+  "min": 30,
+  "max": 65
+ },
+ "series": [
+  {
+   "name": "--batch N (N = 1: MTP on; N \u2265 2: MTP drafting off)",
+   "type": "line",
+   "data": [
+    46.8,
+    50.2,
+    51.9,
+    53.5,
+    53.4,
+    54.4,
+    53.3,
+    48.1
+   ],
+   "symbol": "circle",
+   "symbolSize": 10,
+   "connectNulls": false,
+   "lineStyle": {
+    "width": 2.5,
+    "color": "#2a78d6",
+    "type": "solid"
+   },
+   "itemStyle": {
+    "color": "#2a78d6",
+    "borderColor": "#fcfcfb",
+    "borderWidth": 2
+   },
+   "label": {
+    "show": false,
+    "position": "top",
+    "color": "#0b0b0b",
+    "fontSize": 13,
+    "fontWeight": "bold",
+    "formatter": "{@[1]}"
+   }
+  },
+  {
+   "name": "--batch N --batch-mtp",
+   "type": "line",
+   "data": [
+    46.8,
+    51.8,
+    52.3,
+    51.7,
+    null,
+    null,
+    null,
+    null
+   ],
+   "symbol": "circle",
+   "symbolSize": 10,
+   "connectNulls": false,
+   "lineStyle": {
+    "width": 2.5,
+    "color": "#eb6834",
+    "type": "dashed"
+   },
+   "itemStyle": {
+    "color": "#eb6834",
+    "borderColor": "#fcfcfb",
+    "borderWidth": 2
+   },
+   "label": {
+    "show": false,
+    "position": "top",
+    "color": "#0b0b0b",
+    "fontSize": 13,
+    "fontWeight": "bold",
+    "formatter": "{@[1]}"
+   }
+  },
+  {
+   "name": "--batch N, MTP head removed",
+   "type": "line",
+   "data": [
+    null,
+    null,
+    null,
+    56.5,
+    59.6,
+    56.6,
+    58.4,
+    55.3
+   ],
+   "symbol": "circle",
+   "symbolSize": 10,
+   "connectNulls": false,
+   "lineStyle": {
+    "width": 2.5,
+    "color": "#1baf7a",
+    "type": "dashed"
+   },
+   "itemStyle": {
+    "color": "#1baf7a",
+    "borderColor": "#fcfcfb",
+    "borderWidth": 2
+   },
+   "label": {
+    "show": false,
+    "position": "top",
+    "color": "#0b0b0b",
+    "fontSize": 13,
+    "fontWeight": "bold",
+    "formatter": "{@[1]}"
+   }
+  },
+  {
+   "name": "--batch N --kv-resident 8192",
+   "type": "line",
+   "data": [
+    null,
+    null,
+    null,
+    57.9,
+    null,
+    null,
+    null,
+    57.8
+   ],
+   "symbol": "circle",
+   "symbolSize": 10,
+   "connectNulls": false,
+   "lineStyle": {
+    "width": 2.5,
+    "color": "#eda100",
+    "type": "dashed"
+   },
+   "itemStyle": {
+    "color": "#eda100",
+    "borderColor": "#fcfcfb",
+    "borderWidth": 2
+   },
+   "label": {
+    "show": false,
+    "position": "top",
+    "color": "#0b0b0b",
+    "fontSize": 13,
+    "fontWeight": "bold",
+    "formatter": "{@[1]}"
+   }
+  },
+  {
+   "name": "MTP head removed + --kv-resident 8192",
+   "type": "line",
+   "data": [
+    null,
+    null,
+    null,
+    58.1,
+    null,
+    60.2,
+    null,
+    58.3
+   ],
+   "symbol": "circle",
+   "symbolSize": 10,
+   "connectNulls": false,
+   "lineStyle": {
+    "width": 2.5,
+    "color": "#e87ba4",
+    "type": "dashed"
+   },
+   "itemStyle": {
+    "color": "#e87ba4",
+    "borderColor": "#fcfcfb",
+    "borderWidth": 2
+   },
+   "label": {
+    "show": true,
+    "position": "top",
+    "color": "#0b0b0b",
+    "fontSize": 13,
+    "fontWeight": "bold",
+    "formatter": "{@[1]}"
+   },
+   "markLine": {
+    "symbol": "none",
+    "silent": true,
+    "lineStyle": {
+     "color": "#52514e",
+     "type": "dotted",
+     "width": 1.5
+    },
+    "label": {
+     "formatter": "B* = 6",
+     "color": "#0b0b0b",
+     "fontSize": 14,
+     "fontWeight": "bold"
+    },
+    "data": [
+     {
+      "xAxis": "6"
+     }
+    ]
+   }
+  }
+ ]
+}
